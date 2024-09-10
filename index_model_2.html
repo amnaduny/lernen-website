@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernen Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
+
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" data-target="hero"><img class="logo" src="assets/logo Lernen PNG 2.png" alt="logo-lernen"></a>
+
+            <!-- navbar -->
+            <nav>
+                <a href="#" data-target="hero">Beranda</a>
+                <a href="#" data-target="program-kursus-page">Program</a>
+                <a href="#blog">Blog</a>
+                <a href="#testimoni">Testimoni</a>
+                <a href="#" data-target="guide-regis-payment-page">Panduan</a>
+                <a href="#" data-target="footer">Hubungi</a>
+            </nav>
+
+            <!-- Button (Masuk, Daftar) -->
+            <div class="buttons">
+                <button class="sign-up">Daftar</button>
+
+                <button class="sign-in">Masuk</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>FROM INDONESIA TO WORLDWIDE</h1>
+            <p>Lernen menyediakan layanan konsultasi dan pelatihan
+            bagi pelajar dan mahasiswa Indonesia untuk meningkatkan
+            kualitas pendidikan dan membuka peluang karir.</p>
+            <p>Kami fokus pada peningkatan kompetensi akademik dan
+            profesional dari SMA/SMK hingga S3.</p>
+            <button onclick="window.location.href='hubungi'">Konsultasi Dulu</button>
+        </div>
+
+        <div class="img-hero-container">
+            <img alt="image-hero" src="assets/hero section/happy man.svg">
+        </div>
+    </section>
+
+    <!-- Why-Us Section -->
+    <section class="why-us-page">
+        <div class="why-us">
+            <div class="title">
+                <h1>Mengapa memilih kami?</h1>
+                <p>Materi dan pengalaman belajar yang lebih efisien !!!</p>
+            </div>
+            
+
+            <div class="program-content">
+                <div id="content">
+                    <img src="assets\why-us section\online-learning 1.svg" alt="img-1">
+                    <h2>Pembelajaran Fleksibel</h2>
+                    <p>Belajar di manapun dan kapan pun !!!</p>
+                </div>
+
+                <div id="content">
+                    <img src="assets\why-us section\teaching 1.svg" alt="img-2">
+                    <h2>Tutor Profesional</h2>
+                    <p>Pemateri yang berpengalaman !!!</p>
+                </div>
+
+                <div id="content">
+                    <img src="assets\why-us section\chatting 1.svg" alt="img-3">
+                    <h2>Tanya Kapan Saja</h2>
+                    <p>Bertanya ke pemateri kapan saja !!!</p>
+                </div>
+
+                <div id="content">
+                    <img src="assets\why-us section\uptodate 1.svg" alt="img-4">
+                    <h2>Program Bervariasi</h2>
+                    <p>Banyak pilihan program pembelajaran !!!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Section -->
+    <section class="program-kursus-page">
+        <div class="program-kursus">
+            <div class="title">
+                <h1>Program Kursus</h1>
+                <p>Lernen mewujudkan potensi terbaik Anda melalui bimbingan belajar yang interaktif dan fleksibel !!!</p>
+            </div>
+            
+            <div class="pilihan-kursus">
+                <div id="kursus">
+                    <h2>
+                        Kursus-1
+                    </h2>
+                    <ul>
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                </div>
+
+                <div id="kursus">
+                    <h2>
+                        Kursus-2
+                    </h2>
+                    <ul>
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                </div>
+
+                <div id="kursus">
+                    <h2>
+                        Kursus-3
+                    </h2>
+                    <ul>
+                        <li>List 1</li>
+                        <li>List 2</li>
+                        <li>List 3</li>
+                        <li>List 4</li>
+                    </ul>
+                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mentor Section -->
+    <section class="mentor-page">
+        <div class="mentor">
+            <div class="title">
+                <h1>
+                    Pembimbing yang berkualitas dan berpengalaman
+                </h1>
+            </div>
+
+            <div class="container swiper">
+                <div class="slider-wrapper">
+                    <div class="card-list swiper-wrapper">
+                        <div class="card-item swiper-slide">
+                            <img src="card slider/images/img-1.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Yusril Fatahilmi</h2>
+                            <p class="user-profession">Electrical Engineer</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="card slider/images/img-2.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Elok Paikoh</h2>
+                            <p class="user-profession">Management</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="card slider/images/img-3.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Amnaduny Akhara</h2>
+                            <p class="user-profession">Data Science</p>
+                        </div>
+
+                        <div class="card-item swiper-slide">
+                            <img src="card slider/images/img-4.jpg" alt="User Image" class="user-image">
+                            <h2 class="user-name">Abyan</h2>
+                            <p class="user-profession">Biotech</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide-button swiper-button-prev"></div>
+                    <div class="swiper-slide-button swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <!-- <section class="testimoni">
+        <div class="title">
+            <h1>
+                Kisah Inspiratif Alumni Lernen Indonesia
+            </h1>
+        </div>
+
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card-item swiper-slide">
+                        <img src="card slider/images/img-1.jpg" alt="User Image" class="user-image">
+                        <h2 class="user-name">Fulan 1</h2>
+                        <p class="user-profession">Lernen bagus dan terpercaya</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="card slider/images/img-2.jpg" alt="User Image" class="user-image">
+                        <h2 class="user-name">Fulan 2</h2>
+                        <p class="user-profession">Lernen merupakan perkursusan yang baik dan handal</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="card slider/images/img-3.jpg" alt="User Image" class="user-image">
+                        <h2 class="user-name">Fulan 3</h2>
+                        <p class="user-profession">Lernen memberikan insight yang sangat lengkap</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="card slider/images/img-4.jpg" alt="User Image" class="user-image">
+                        <h2 class="user-name">Fulan 4</h2>
+                        <p class="user-profession">Maju jaya jaya jaya</p>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-slide-button swiper-button-prev"></div>
+                <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Guide Section -->
+    <section class="guide-regis-payment-page">
+        <div class="guide-regis-payment">
+            <div class="title">
+                <h1>Panduan Pendaftaran dan Pembayaran</h1>
+                <p>Pendaftaran mudah dan murah !!!</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step step-1">
+                    <img alt="step-1-fig" src="assets\regis-payment-section\undraw_share_opinion_re_4qk7 1.svg">
+                    <p>Hubungi Lernen Indonesia melalui Whatsapp</p>
+                </div>
+
+                <div class="arrow-1">
+                    <img alt="arrow-1-fig" src="assets\regis-payment-section\arrow.svg">
+                </div>
+
+                <div class="step step-2">
+                    <img alt="step-2-fig" src="assets\regis-payment-section\undraw_accept_tasks_re_09mv 1.svg">
+                    <p>Pilih kursus yang diminati</p>
+                </div>
+
+                <div class="arrow-2">
+                    <img alt="arrow-2-fig" src="assets\regis-payment-section\arrow.svg">
+                </div>
+
+                <div class="step step-3">
+                    <img alt="step-3-fig" src="assets\regis-payment-section\undraw_transfer_money_re_6o1h 1.svg">
+                    <p>Pembayaran dapat menggunakan transfer </p>
+                    <p>via Bank BCA, QRIS, LinkAja</p>
+                </div>
+
+                <div class="arrow-3">
+                    <img alt="arrow-3-fig" src="assets\regis-payment-section\arrow.svg">
+                </div>
+
+                <div class="step step-4">
+                    <img alt="step-4-fig" src="assets\regis-payment-section\undraw_confirmation_re_b6q5 1.svg">
+                    <p>Konfirmasi pembayaran</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="wrap-newsletter">
+            <div class="title">
+                <h1>Konsultasikan dulu kebutuhanmu!!!</h1>
+                <p>Hubungi admin untuk program yang kamu inginkan</p>
+                <p>bersama Lernen Indonesia.</p>
+            </div>
+
+            <button class="konsultasi-dulu">Konsultasi dulu</button>
+        </div>
+
+        <img alt="newsletter-img" src="assets\newsletter-section\undraw_articles_wbpb 1.svg">
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-page">
+        <div class="footer">
+            <div class="footer-container">
+                <!-- Left Side: Company Info, Image, Social Media -->
+                <div class="footer-left">
+                    <a href="#" data-target="hero"><img class="logo" src="assets\logo Lernen PNG 2.png" alt="logo-lernen"></a>
+
+                    <!-- <img src="assets\logo Lernen PNG 2.png" alt="Company Logo" class="logo"> -->
+
+                    <div class="alamat">
+                        <p>Perum Citra Asri Residen Blok J No 4 RT 05 RW 09</p>
+                        <p>Ds. Klosot, Sidodadi, Lawang, Malang, 65216</p>
+                    </div>
+
+                    <div class="social-media-footer">
+                        <p>Hubungi kami di :</p>
+                        <p>lernenindonesia@gmail.com</p>
+                    </div>
+
+                    <div class="social-media-logo">
+                        <a href="https://www.instagram.com/lernen.education?igsh=MWd5c3B1bWd2M2t0Yg==" target="_blank">
+                            <img alt="instagram-logo" src="assets\social media\8679433_instagram_fill_icon.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="tiktok-logo" src="assets\social media\8010447_tiktok_social media_blogger_advertising_marketing_icon.svg">
+                        </a>
+                        <a href="#">
+                            <img alt="whatsapp-logo" src="assets\social media\2986186_logo_media_social_whatsapp_icon.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Side: Menus -->
+                <div class="footer-right">
+                    <ul class="footer-menu">
+                        <li><a href="#" data-target="hero">Beranda</a></li>
+                        <li><a href="#" data-target="program-kursus-page">Program</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#testimoni">Testimoni</a></li>
+                        <li><a href="#" data-target="guide-regis-payment-page">Panduan</a></li>
+                        <li><a href="#" data-target="footer">Hubungi</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bottom Side: Copyright -->
+                <div class="footer-bottom">
+                    <hr>
+                    <p class="copyright">© Copyright 2024, All Rights Reserved by Lernen Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Linking SwiperJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

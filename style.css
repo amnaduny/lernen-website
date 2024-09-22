@@ -545,6 +545,12 @@ header .header-container .sign-in, .sign-up, .call-admin {
     background-color: var(--bg-button-darker);
 }
 
+.course-program .course-program-container .course-options 
+#course button.coming-soon {
+    background-color: rgb(224, 80, 80);
+    cursor: default;
+}
+
 .course-program .course-program-container .modal-card {
     min-width: var(--min-modal-width);
     max-width: var(--max-modal-width);

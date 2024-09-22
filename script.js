@@ -155,3 +155,10 @@ document.querySelectorAll('.participant').forEach(participant => {
         createWhatsAppLink(message);
     });
 });
+
+//--- End of Modal Course Program ---//
+
+//--- Information Section ---//
+function registWebinar29sept() {
+    window.open("https://tinyurl.com/MengubahMimpiMenjadiGelar","_blank");
+}

@@ -590,6 +590,7 @@ img {
     margin: 0.25rem;
     border-radius: 12px;
     background-color: var(--bg-button);
+    transition: transform 0.3s ease;
 }
 
 .course-program .course-program-container .course-options

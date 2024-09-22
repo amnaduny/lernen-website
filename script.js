@@ -139,7 +139,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 // Lernen WhatsApp number
-const waNumber = '+6289681036829';
+const waNumber = '+6282337506356';
 
 // Function to create WhatsApp link with a custom message
 function createWhatsAppLink(message) {

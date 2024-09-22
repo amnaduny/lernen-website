@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lernen Indonesia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_new.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Plus Jakarta Sans' rel='stylesheet'>
 
@@ -19,44 +19,52 @@
             <!-- navbar -->
             <nav>
                 <a href="#" data-target="hero">Beranda</a>
-                <a href="#" data-target="program-kursus-page">Program</a>
+                <a href="#" data-target="course-program">Program</a>
                 <a href="#blog">Blog</a>
                 <a href="#testimoni">Testimoni</a>
-                <a href="#" data-target="guide-regis-payment-page">Panduan</a>
-                <a href="#" data-target="footer">Hubungi</a>
+                <a href="#" data-target="guide">Panduan</a>
+                <a href="#" data-target="footer-page">Hubungi</a>
             </nav>
 
-            <!-- Button (Masuk, Daftar) -->
+            <!-- Button (Masuk, Daftar) / (Hubungi) -->
             <div class="buttons">
-                <button class="sign-up">Daftar</button>
+                <!-- <button class="sign-up">Daftar</button> -->
 
-                <button class="sign-in">Masuk</button>
+                <!-- <button class="sign-in">Masuk</button> -->
+                <a href="https://wa.me/+6289681036829?text=Halo%20Lernen%20Indonesia!" target="_blank">
+                    <button class="call-admin">Hubungi Admin</button>
+                </a>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>FROM INDONESIA TO WORLDWIDE</h1>
-            <p>Lernen menyediakan layanan konsultasi dan pelatihan
-            bagi pelajar dan mahasiswa Indonesia untuk meningkatkan
-            kualitas pendidikan dan membuka peluang karir.</p>
-            <p>Kami fokus pada peningkatan kompetensi akademik dan
-            profesional dari SMA/SMK hingga S3.</p>
-            <button onclick="window.location.href='hubungi'">Konsultasi Dulu</button>
-        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>FROM INDONESIA TO WORLDWIDE</h1>
+                <p>Lernen menyediakan layanan konsultasi dan pelatihan
+                bagi pelajar dan mahasiswa Indonesia untuk meningkatkan
+                kualitas pendidikan dan membuka peluang karir.</p>
+                <p>Kami fokus pada peningkatan kompetensi akademik dan
+                profesional dari SMA/SMK hingga S3.</p>
 
-        <div class="img-hero-container">
-            <img alt="image-hero" src="assets/hero section/happy man.svg">
+                <a href="https://wa.me/+6289681036829?text=Halo%20Lernen%20Indonesia!" target="_blank">
+                    <button>Konsultasi Dulu</button>
+                </a>
+            </div>
+
+            <div class="img-hero-container">
+                <img alt="image-hero" src="assets/hero section/happy man.svg">
+            </div>
         </div>
     </section>
 
     <!-- Why-Us Section -->
-    <section class="why-us-page">
-        <div class="why-us">
+    <section class="why-us">
+        <div class="why-us-container">
             <div class="title">
-                <h1>Mengapa memilih kami?</h1>
+                <h2>Mengapa memilih kami?</h2>
                 <p>Materi dan pengalaman belajar yang lebih efisien !!!</p>
             </div>
             
@@ -64,25 +72,25 @@
             <div class="program-content">
                 <div id="content">
                     <img src="assets\why-us section\online-learning 1.svg" alt="img-1">
-                    <h2>Pembelajaran Fleksibel</h2>
+                    <h3>Pembelajaran Fleksibel</h3>
                     <p>Belajar di manapun dan kapan pun !!!</p>
                 </div>
 
                 <div id="content">
                     <img src="assets\why-us section\teaching 1.svg" alt="img-2">
-                    <h2>Tutor Profesional</h2>
+                    <h3>Tutor Profesional</h3>
                     <p>Pemateri yang berpengalaman !!!</p>
                 </div>
 
                 <div id="content">
                     <img src="assets\why-us section\chatting 1.svg" alt="img-3">
-                    <h2>Tanya Kapan Saja</h2>
+                    <h3>Tanya Kapan Saja</h3>
                     <p>Bertanya ke pemateri kapan saja !!!</p>
                 </div>
 
                 <div id="content">
                     <img src="assets\why-us section\uptodate 1.svg" alt="img-4">
-                    <h2>Program Bervariasi</h2>
+                    <h3>Program Bervariasi</h3>
                     <p>Banyak pilihan program pembelajaran !!!</p>
                 </div>
             </div>
@@ -90,63 +98,206 @@
     </section>
 
     <!-- Program Section -->
-    <section class="program-kursus-page">
-        <div class="program-kursus">
+    <section class="course-program">
+        <div class="course-program-container">
             <div class="title">
-                <h1>Program Kursus</h1>
+                <h2>Program Kursus</h2>
                 <p>Lernen mewujudkan potensi terbaik Anda melalui bimbingan belajar yang interaktif dan fleksibel !!!</p>
             </div>
             
-            <div class="pilihan-kursus">
-                <div id="kursus">
+            <div class="course-options">
+                <!-- Scholarship Care -->
+                <div id="course">
                     <h2>
-                        Kursus-1
+                        Scholarship Care
                     </h2>
-                    <ul>
-                        <li>List 1</li>
-                        <li>List 2</li>
-                        <li>List 3</li>
-                        <li>List 4</li>
-                    </ul>
-                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                    <div class="content-list">
+                        <ul>
+                            <li>Coaching and Assistance</li>
+                            <li>Proofreading</li>
+                            <li>Exclusive Sharing</li>
+                            <li>Master & PhD</li>
+                        </ul>
+                    </div>
+                    <div class="content-price">
+                        <h3>Mulai dari</h3>
+                        <h4>Rp 100.000</h4>
+                    </div>
+                    
+                    <button onclick="openModal();" class="button is-success">Lebih Lanjut</button>
                 </div>
 
-                <div id="kursus">
+                <!-- Mini Course -->
+                <div id="course">
                     <h2>
-                        Kursus-2
+                        Mini Course
                     </h2>
-                    <ul>
-                        <li>List 1</li>
-                        <li>List 2</li>
-                        <li>List 3</li>
-                        <li>List 4</li>
-                    </ul>
-                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                    <div class="content-list">
+                        <ul>
+                            <li>Coaching and Assistance</li>
+                            <li>Proofreading</li>
+                            <li>Exclusive Sharing</li>
+                            <li>Master & PhD</li>
+                        </ul>
+                    </div>
+                    <div class="content-price">
+                        <h3>Harga</h3>
+                        <h4>GRATIS</h4>
+                    </div>
+                    
+                    <button class="button is-success">Lebih Lanjut</button>
                 </div>
 
-                <div id="kursus">
+                <!-- One Shot Program -->
+                <div id="course">
                     <h2>
-                        Kursus-3
+                        One Shot Program
                     </h2>
-                    <ul>
-                        <li>List 1</li>
-                        <li>List 2</li>
-                        <li>List 3</li>
-                        <li>List 4</li>
-                    </ul>
-                    <button onclick="window.location.href='lebih-lanjut'">Lebih Lanjut</button>
+                    <div class="content-list">
+                        <ul>
+                            <li>Coaching and Assistance</li>
+                            <li>Proofreading</li>
+                            <li>Exclusive Sharing</li>
+                            <li>Master & PhD</li>
+                        </ul>
+                    </div>
+                    <div class="content-price">
+                        <h3>Mulai dari</h3>
+                        <h4>Rp 500.000</h4>
+                    </div>
+                    
+                    <button class="button is-success">Lebih Lanjut</button>
+                </div>
+                
+                <div class="modal" id="modal-course-program">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Scholarship Care</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
+                            <div class="intro">
+                                <h3>Apa itu Scholarship Care?</h3>
+                                <p>
+                                    Scholarship Care adalah program konsultasi secara langsung dengan mentor 
+                                    profesional yang membantu kandidat dalam proses pendaftaran atau 
+                                    pencarian beasiswa sesuai target kampus dan jurusan. Program ini 
+                                    menyediakan pendampingan <strong>"1 on 1"</strong>, <strong>"2 on 1"</strong> atau 
+                                    <strong>"3 on 1"</strong> untuk membahas kendala atau pertanyaan terkait 
+                                    tahapan pendaftaran beasiswa dalam sesi konsultasi tunggal.
+                                </p>
+                            </div>
+
+                            <div class="program-facility">
+                                <h3>Fasilitas apa saja yang akan didapat?</h3>
+
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/assistance.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Coaching and Assistance
+                                        </h3>
+                                        <p>
+                                            Program ini memberikan arahan langsung dalam menentukan strategi 
+                                            atau langkah selanjutnya berdasarkan analisis profil dan kebutuhan kandidat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/proofreading.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Proofreading
+                                        </h3>
+                                        <p>
+                                            Kandidat mendapat fasilitas pengecekan dan proofreading untuk salah satu 
+                                            dokumen yang dibutuhkan dalam pendaftaran beasiswa atau kampus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/sharing.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Exclusive Sharing
+                                        </h3>
+                                        <p>
+                                            Peserta mendapat kesempatan diskusi eksklusif dengan mentor selama 
+                                            1 hingga 1,5 jam untuk konsultasi dan bimbingan, sesuai kebutuhan masing-masing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="course-price">
+                                <h3 class="title">Harga Program</h3>
+
+                                <div class="degree">
+                                    <h3>Master Degree</h3>
+                                    <img src="assets/modal-course-program/graduation.png">
+
+                                    <div class="participant" id="master-1on1"
+                                    data-message="Saya tertarik dengan program Master Degree 1 on 1 Mentoring.">
+                                        <p class="options">1 on 1 Mentoring</p>
+                                        <p class="price">Rp 270.000</p>
+                                    </div>
+                                    
+                                    <div class="participant" id="master-2on1"
+                                    data-message="Saya tertarik dengan program Master Degree 2 on 1 Mentoring.">
+                                        <p class="options">2 on 1 Mentoring</p>
+                                        <p class="price">Rp 140.000</p>
+                                    </div>
+                                    
+                                    <div class="participant" id="master-3on1" 
+                                    data-message="Saya tertarik dengan program Master Degree 3 on 1 Mentoring.">
+                                        <p class="options">3 on 1 Mentoring</p>
+                                        <p class="price">Rp 100.000</p>
+                                    </div>
+                                </div>
+
+                                <div class="degree">
+                                    <h3>PhD Degree</h3>
+                                    <img src="assets/modal-course-program/graduation.png">
+
+                                    <div class="participant" id="phd-1on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 1 on 1 Mentoring.">
+                                        <p class="options">1 on 1 Mentoring</p>
+                                        <p class="price">Rp 350.000</p>
+                                    </div>
+                                    
+                                    <div class="participant" id="phd-2on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 2 on 1 Mentoring.">
+                                        <p class="options">2 on 1 Mentoring</p>
+                                        <p class="price">Rp 185.000</p>
+                                    </div>
+                                    
+                                    <div class="participant" id="phd-3on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 3 on 1 Mentoring.">
+                                        <p class="options">3 on 1 Mentoring</p>
+                                        <p class="price">Rp 150.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button class="button is-warning">Tanya Admin</button>
+                        </footer>
+                    </div>
+                    <!-- <button id="close-modal" class="modal-close is-large" aria-label="close"></button> -->
+                    <!-- <button id="daftar-modal" class="modal-daftar is-large" aria-label="daftar"></button> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Mentor Section -->
-    <section class="mentor-page">
-        <div class="mentor">
+    <section class="mentor">
+        <div class="mentor-container">
             <div class="title">
-                <h1>
+                <h2>
                     Pembimbing yang berkualitas dan berpengalaman
-                </h1>
+                </h2>
             </div>
 
             <div class="container swiper">
@@ -229,10 +380,10 @@
     </section> -->
 
     <!-- Guide Section -->
-    <section class="guide-regis-payment-page">
-        <div class="guide-regis-payment">
+    <section class="guide">
+        <div class="guide-container">
             <div class="title">
-                <h1>Panduan Pendaftaran dan Pembayaran</h1>
+                <h2>Panduan Pendaftaran dan Pembayaran</h2>
                 <p>Pendaftaran mudah dan murah !!!</p>
             </div>
             
@@ -277,12 +428,14 @@
     <section class="newsletter">
         <div class="wrap-newsletter">
             <div class="title">
-                <h1>Konsultasikan dulu kebutuhanmu!!!</h1>
+                <h3>Konsultasikan dulu kebutuhanmu!!!</h3>
                 <p>Hubungi admin untuk program yang kamu inginkan</p>
                 <p>bersama Lernen Indonesia.</p>
             </div>
 
-            <button class="konsultasi-dulu">Konsultasi dulu</button>
+            <a href="https://wa.me/+6289681036829?text=Halo%20Lernen%20Indonesia!" target="_blank">
+                <button>Konsultasi Dulu</button>
+            </a>
         </div>
 
         <img alt="newsletter-img" src="assets\newsletter-section\undraw_articles_wbpb 1.svg">
@@ -298,7 +451,7 @@
 
                     <!-- <img src="assets\logo Lernen PNG 2.png" alt="Company Logo" class="logo"> -->
 
-                    <div class="alamat">
+                    <div class="address">
                         <p>Perum Citra Asri Residen Blok J No 4 RT 05 RW 09</p>
                         <p>Ds. Klosot, Sidodadi, Lawang, Malang, 65216</p>
                     </div>
@@ -325,11 +478,11 @@
                 <div class="footer-right">
                     <ul class="footer-menu">
                         <li><a href="#" data-target="hero">Beranda</a></li>
-                        <li><a href="#" data-target="program-kursus-page">Program</a></li>
+                        <li><a href="#" data-target="course-program">Program</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#testimoni">Testimoni</a></li>
-                        <li><a href="#" data-target="guide-regis-payment-page">Panduan</a></li>
-                        <li><a href="#" data-target="footer">Hubungi</a></li>
+                        <li><a href="#" data-target="guide">Panduan</a></li>
+                        <li><a href="#" data-target="footer-page">Hubungi</a></li>
                     </ul>
                 </div>
 
@@ -346,6 +499,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- Linking Custom Script -->
-    <script src="script.js"></script>
+    <script src="script_new.js"></script>
 </body>
 </html>

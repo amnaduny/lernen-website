@@ -36,8 +36,10 @@
     --medium: 500;
 
     /* Layout */
-    --min-width: 1200px;
-    --max-width: 1200px;
+    --min-width-desktop: 1200px;
+    --max-width-desktop: 1200px;
+    --min-width-tablet: 900px;
+    --max-width-tablet: 900px;
     --min-modal-width: 900px;
     --max-modal-width: 900px
     --border-section: 1px solid rgb(255, 255, 255);
@@ -69,8 +71,8 @@ header .header-container {
     justify-content: flex-start;
     align-items: center;
     padding: 5px;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     margin: 0 auto;
 }
 
@@ -158,8 +160,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
     margin: 0 auto;
     font-family: var(--font-style--2);
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 800px;
     border: var(--border-section);
 
@@ -235,8 +237,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .information .information-container {
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -274,6 +276,7 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .information .information-container .webinar-content
 .content {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -307,9 +310,29 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .information .information-container .webinar-content 
-.content img {
+.content img#daftar-sekarang {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.information .information-container .webinar-content 
+.content img#free-logo {
+    width: 150px;
+    height: auto;
+    top: 270px;
+    position: absolute;
+    z-index: 2;
+}
+
+.information .information-container .webinar-content 
+.content img#img-content {
     width: 350px;
     height: auto;
+    position: relative;
     cursor: pointer;
 }
 
@@ -333,8 +356,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .why-us .why-us-container {
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 720px;
     border: 1px solid var(--bg4);
     display: flex;
@@ -408,8 +431,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .course-program .course-program-container {
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 700px;
     border: var(--border-section);
     display: flex;
@@ -702,7 +725,7 @@ img {
 .modal .modal-card .modal-card-body .course-price .degree 
 .participant {
     margin: 0.25rem;
-    border-radius: 12px;
+    border-radius: 100px;
     background-color: var(--bg-button);
     transition: transform 0.3s ease;
 }
@@ -725,6 +748,10 @@ img {
     font-weight: var(--semi-bold);
 }
 
+.course-program .course-program-container .course-options 
+footer a button {
+    border-radius: 100px;    
+}
 
 /* Mentor */
 .mentor {
@@ -733,8 +760,8 @@ img {
 
 .mentor .mentor-container {
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 700px;
     border: 1px solid var(--bg4);
 }
@@ -832,8 +859,8 @@ img {
 
 .guide .guide-container {
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 900px;
     border: var(--border-section);
 }
@@ -926,8 +953,8 @@ img {
 .newsletter {
     position: relative;
     margin: 0 auto;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
     height: 300px;
     border: var(--border-section);
 }
@@ -1007,8 +1034,8 @@ img {
 .footer-page .footer {
     margin: 0 auto;
     padding: 0;
-    max-width: var(--max-width);
-    min-width: var(--min-width);
+    max-width: var(--max-width-desktop);
+    min-width: var(--min-width-desktop);
 }
 
 .footer-page .footer .footer-container {

@@ -40,6 +40,8 @@
     --max-width-desktop: 1200px;
     --min-width-tablet: 900px;
     --max-width-tablet: 900px;
+    --min-width-mobile: 600px;
+    --max-width-mobile: 600px;
     --min-modal-width: 900px;
     --max-modal-width: 900px
     --border-section: 1px solid rgb(255, 255, 255);
@@ -165,10 +167,11 @@ header .header-container .sign-in, .sign-up, .call-admin {
     height: 800px;
     border: var(--border-section);
 
-    background-image: url('assets/hero section/Hero Header 2.svg');
+    background-image: url('assets/hero section/hero bg.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    /* background-size: var(--max-width-desktop); */
+    background-size: contain;
 }
 
 .hero .hero-container .hero-content {
@@ -336,20 +339,22 @@ header .header-container .sign-in, .sign-up, .call-admin {
     cursor: pointer;
 }
 
-.information .information-container.webinar-content 
+.information .information-container .webinar-content 
 .content h3 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    font-size: var(--font-size-h3-desktop);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .information .information-container .webinar-content 
 .content p {
+    font-size: var(--font-size-p-desktop);
     justify-content: left;
     text-align: left;
     align-items: left;
 } 
 
-/* Why Us */
+/* Why Us Section */
 .why-us {
     background-color: var(--bg4);
 }
@@ -401,6 +406,7 @@ header .header-container .sign-in, .sign-up, .call-admin {
 .why-us .why-us-container .program-content .content {
     display: flex;
     flex-direction: column;
+    margin: 0;
     padding: 1rem;
     justify-content: center;
     align-items: center;
@@ -424,7 +430,7 @@ header .header-container .sign-in, .sign-up, .call-admin {
     font-weight: var(--medium);
 }
 
-/* Program */
+/* Program Section */
 .course-program {
     background-color: none;
 }
@@ -753,7 +759,7 @@ footer a button {
     border-radius: 100px;    
 }
 
-/* Mentor */
+/* Mentor Section */
 .mentor {
     background-color: var(--bg4);
 }
@@ -852,7 +858,7 @@ footer a button {
     color: #4658ff;
 }
 
-/* Guide */
+/* Guide Section */
 .guide {
     background-color: none;
 }
@@ -870,9 +876,10 @@ footer a button {
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 .guide .guide-container .title h2 {
     margin: 0 auto;
-    width: 660px;
+    /* width: 660px; */
     font-family: var(--font-style--2);
     font-size: var(--font-size-h2-desktop);
     font-weight: var(--bold);
@@ -949,7 +956,7 @@ footer a button {
     max-width: 225px;
 }
 
-/* Newsletter */
+/* Newsletter Section */
 .newsletter {
     position: relative;
     margin: 0 auto;
@@ -998,7 +1005,7 @@ footer a button {
     cursor: pointer;
     display: inline-flex;
     font-family: var(--font-style--1);
-    font-size: p-d;
+    font-size: var(--font-size-p-desktop);
     font-weight: var(--semi-bold);
     justify-content: center;
     line-height: 20px;
@@ -1026,7 +1033,7 @@ footer a button {
     width: 185px;
 }
 
-/* Footer */
+/* Footer Section */
 .footer-page {
     background-color: var(--bg4);
 }
@@ -1127,4 +1134,490 @@ footer a button {
     font-weight: var(--semi-bold);
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/* Table Layout */
+@media (max-width: 1024px) and (min-width: 768px) {
+    /* Header */
+    header .header-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    header .header-container nav a {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    header .header-container .sign-in, .sign-up, .call-admin {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    /* Hero Section */
+    .hero .hero-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+        background-size: contain;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: var(--font-size-p-tablet);
+    }
+    
+    .hero .hero-container .img-hero-container img {
+        position: absolute;
+        top: 415px;
+        width: 500px;
+    }
+
+    .hero .hero-container .hero-content h1 {
+        font-size: var(--font-size-h1-tablet);
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .hero .hero-container button {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    /* Information Section */
+    .information .information-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .information .information-container .title h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    .information .information-container .title p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .information .information-container .webinar-content 
+    .content h3 {
+        font-size: var(--font-size-h3-tablet);
+    }   
+
+    .information .information-container .webinar-content 
+    .content p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    /* Why Us Section */
+    .why-us .why-us-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .why-us .why-us-container .title h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    .why-us .why-us-container .title p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .why-us .why-us-container .program-content .content h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    /* Program Section */
+    .course-program .course-program-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .course-program .course-program-container .title h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    .course-program .course-program-container .title p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .course-program .course-program-container .course-options 
+    #course {
+        height: 400px;
+    }
+
+    .course-program .course-program-container .course-options 
+    #course h2 {
+    font-size: 22px;
+    }
+
+    .course-program .course-program-container .course-options 
+    #course button {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-title {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .intro h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .program-facility h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .program-facility 
+    .list-facility .facility-content h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price .title {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price .degree 
+    h3 {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    /* Mentor Section */
+    .mentor .mentor-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .mentor .mentor-container .title h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    /* Guide Section */
+    .guide .guide-container {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .guide .guide-container .title h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    .guide .guide-container .title p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .guide .guide-container .steps p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .guide .guide-container .steps {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .guide .guide-container .steps img {
+        max-width: 200px;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+
+    .newsletter .wrap-newsletter {
+        margin: 1rem 5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .newsletter .wrap-newsletter .title h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    .newsletter .wrap-newsletter .title p {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .newsletter .wrap-newsletter button {
+        font-size: var(--font-size-p-tablet);
+    }
+
+    .newsletter img {
+        position: absolute;
+        top: -30px;
+        left: 65%;
+        width: 185px;
+    }
+
+    /* Footer Section */
+    .footer-page .footer {
+        max-width: var(--max-width-tablet);
+        min-width: var(--min-width-tablet);
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    /* Header */
+    header .header-container {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    header .header-container a img {
+        height: 48px;
+        width: 44px;
+        margin-left: 1rem;
+    }
+
+    header .header-container nav a {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    header .header-container .sign-in, .sign-up, .call-admin {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    /* Hero Section */
+    .hero .hero-container {
+        display: block;
+        height: 500px;
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+        background-image: url('assets/hero section/hero\ bg\ 2.svg');
+        background-size: contain;
+        margin-top: 80px;
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: var(--font-size-p-mobile);
+    }
+    
+    .hero .hero-container .img-hero-container img {
+         display: none;
+    }
+
+    .hero .hero-container .hero-content h1 {
+        font-size: var(--font-size-h1-mobile);
+    }
+
+    .hero .hero-container .hero-content p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .hero .hero-container button {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    /* Information Section */
+    .information .information-container {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    .information .information-container .title h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    .information .information-container .title p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .information .information-container .webinar-content 
+    .content h3 {
+        font-size: var(--font-size-h3-mobile);
+    }   
+
+    .information .information-container .webinar-content 
+    .content p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    /* Why Us Section */
+    .why-us .why-us-container {
+        height: 500px;
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    .why-us .why-us-container .title h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    .why-us .why-us-container .title {
+        margin-bottom: 1rem;
+        margin-top: 0;
+    }
+
+    .why-us .why-us-container .title p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .why-us .why-us-container .program-content {
+        margin: 0;
+    }
+
+    .why-us .why-us-container .program-content .content h3 {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .why-us .why-us-container .program-content .content p {
+        font-size: 13px;
+        margin-top: 1rem;
+    }
+
+    .why-us .why-us-container .program-content .content img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 1rem;
+    }
+
+    /* Program Section */
+    .course-program .course-program-container {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    .course-program .course-program-container .title h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    .course-program .course-program-container .title p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .course-program .course-program-container .course-options {
+        margin: 0;
+    }
+
+    .course-program .course-program-container .course-options 
+    #course {
+        gap: 0;
+        margin: 0.5rem;
+    }
+
+    .course-program .course-program-container .course-options 
+    #course h2 {
+    font-size: 16px;
+    }
+
+    .course-program .course-program-container .course-options 
+    #course button {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .course-program .course-program-container .course-options 
+    #course li {
+        font-size: 14px;
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-title {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .intro h3 {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .program-facility h3 {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body .program-facility 
+    .list-facility .facility-content h3 {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price .title {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price .degree 
+    h3 {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    /* Mentor Section */
+    .mentor .mentor-container {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    .mentor .mentor-container .title h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    /* Guide Section */
+    .guide .guide-container {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
+
+    .guide .guide-container .title h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    .guide .guide-container .title p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .guide .guide-container .steps p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .guide .guide-container .steps {
+        /* margin-left: 10px;
+        margin-right: 10px; */
+        margin: 0;
+    }
+
+    .guide .guide-container .steps img {
+        max-width: 140px;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+        height: 200px;
+    }
+
+    .newsletter .wrap-newsletter {
+        margin: 1rem 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .newsletter .wrap-newsletter .title h3 {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    .newsletter .wrap-newsletter .title p {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .newsletter .wrap-newsletter button {
+        font-size: var(--font-size-p-mobile);
+    }
+
+    .newsletter img {
+        position: absolute;
+        top: -28px;
+        left: 65%;
+        width: 160px;
+    }
+
+    /* Footer Section */
+    .footer-page .footer {
+        max-width: var(--max-width-mobile);
+        min-width: var(--min-width-mobile);
+    }
 }

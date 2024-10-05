@@ -739,12 +739,12 @@ header .header-container .sign-in, .sign-up, .call-admin {
     padding: 0.5rem;
 }
 
-/* .course-program .course-program-container .modal 
+.course-program .course-program-container .modal 
 .modal-card .modal-card-body .program-facility 
 .list-facility img {
-    height: 64px;
-    width: 64px;
-} */
+    height: 70px;
+    width: 70px;
+}
 
 .course-program .course-program-container .modal 
 .modal-card .modal-card-body .program-facility 
@@ -1890,7 +1890,7 @@ img {
     /* Hero Section */
     .hero .hero-container {
         display: block;
-        height: 300px;
+        height: 500px;
         max-width: var(--max-width-small-mobile);
         min-width: var(--min-width-small-mobile);
         background-image: none;
@@ -1957,6 +1957,7 @@ img {
     .why-us .why-us-container {
         max-width: var(--max-width-small-mobile);
         min-width: var(--min-width-small-mobile);
+        height: 600px;
     }
 
     .why-us .why-us-container .title h2 {
@@ -1964,7 +1965,7 @@ img {
     }
 
     .why-us .why-us-container .title {
-        margin-bottom: 0;
+        margin-bottom: 1rem;
         margin-top: 1rem;
     }
 
@@ -1977,10 +1978,11 @@ img {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
         padding: 0;
+        gap: 0.5rem;
         justify-items: center;
         align-items: center;
-        margin-top: 0;
-        margin-bottom: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
     }
 
     .why-us .why-us-container .program-content .content {
@@ -2007,10 +2009,13 @@ img {
     .course-program .course-program-container {
         max-width: var(--max-width-small-mobile);
         min-width: var(--min-width-small-mobile);
+        height: 600px;
     }
 
     .course-program .course-program-container .title {
         width: auto;
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
 
     .course-program .course-program-container .title h2 {
@@ -2085,40 +2090,51 @@ img {
 
     .course-program .course-program-container .modal 
     .modal-card .modal-card-title {
-        font-size: var(--font-size-h2-mobile);
+        font-size: var(--font-size-h2-small-mobile);
+    }
+
+    .course-program .course-program-container .modal 
+    .modal-card .modal-card-body {
+        padding: 0.25rem;
     }
 
     .course-program .course-program-container .modal 
     .modal-card .modal-card-body .intro h3 {
-        font-size: var(--font-size-h3-mobile);
+        font-size: var(--font-size-h3-small-mobile);
     }
 
     .course-program .course-program-container .modal 
     .modal-card .modal-card-body .program-facility h3 {
-        font-size: var(--font-size-h3-mobile);
+        font-size: var(--font-size-h3-small-mobile);
     }
 
     .course-program .course-program-container .modal 
     .modal-card .modal-card-body .program-facility 
     .list-facility .facility-content h3 {
-        font-size: var(--font-size-h3-mobile);
+        font-size: var(--font-size-h3-small-mobile);
     }
 
     .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body .course-price .title {
-        font-size: var(--font-size-h3-mobile);
+        font-size: var(--font-size-h3-small-mobile);
     }
 
     .course-program .course-program-container .course-options
-    .modal .modal-card .modal-card-body .course-price .course-price-container 
-    h3 {
-        font-size: var(--font-size-p-mobile);
+    .modal .modal-card .modal-card-body .course-price 
+    .course-price-container {
+        padding: 0.25rem;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price 
+    .course-price-container h3 {
+        font-size: var(--font-size-p-small-mobile);
     }
 
     .course-program .course-program-container .modal-card {
-        min-width: 576px;
-        max-width: 576px;
-        padding-top: 160px;
+        min-width: 325px;
+        max-width: 325px;
+        padding-top: 50px;
     }
 
     .course-program .course-program-container .course-options
@@ -2128,37 +2144,49 @@ img {
     }
 
     .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price 
+    .course-price-container .program .price {
+        font-size: 10px;
+    }
+
+    .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body .course-price .course-price-container 
-    .program .price {
-        font-size: 14px;
+    .program .options {
+        font-size: 12px;
     }
 
     .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body h3 {
-        font-size: 16px;
+        font-size: var(--font-size-h3-small-mobile);
+        margin-bottom: 0.25rem;
     }
 
     .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body p {
-        font-size: 14px;
+        font-size: var(--font-size-p-small-mobile);
     }
 
     .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body .program-facility
     .list-facility h3 {
-        font-size: 16px;
+        font-size: var(--font-size-h3-small-mobile);
     }
 
     .course-program .course-program-container .course-options
     .modal .modal-card .modal-card-body .program-facility
     .list-facility p {
-        font-size: 14px;
+        font-size: var(--font-size-p-small-mobile);
     }
 
     /* Guide Section */
     .guide .guide-container {
         max-width: var(--max-width-small-mobile);
         min-width: var(--min-width-small-mobile);
+        height: 600px;
+    }
+
+    .guide .guide-container .title {
+        margin-bottom: 2rem;
     }
 
     .guide .guide-container .title h2 {

@@ -29,21 +29,21 @@
     --font-size-h1-mobile: 30px;
     --font-size-h2-mobile: 24px;
     --font-size-h3-mobile: 18px;
-    --font-size-p-mobile: 14px;
+    --font-size-p-mobile: 13px;
 
     --bold: 700;
     --semi-bold: 600;
     --medium: 500;
 
     /* Layout */
-    --min-width-desktop: 1200px;
-    --max-width-desktop: 1200px;
+    --min-width-desktop: 1000px;
+    --max-width-desktop: 1000px;
     --min-width-tablet: 900px;
     --max-width-tablet: 900px;
-    --min-width-mobile: 600px;
-    --max-width-mobile: 600px;
+    --min-width-mobile: 540px;
+    --max-width-mobile: 540px;
     --min-modal-width: 900px;
-    --max-modal-width: 900px
+    --max-modal-width: 900px;
     --border-section: 1px solid rgb(255, 255, 255);
 }
 
@@ -88,6 +88,13 @@ header .header-container a img:hover {
     cursor: pointer;
 }
 
+header .header-container .dropdown-toggle {
+    font-size: 24px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+}
+
 header .header-container nav {
     display: flex;
     flex-direction: row;
@@ -106,6 +113,10 @@ header .header-container nav a {
     font-weight: var(--semi-bold);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     font-size: var(--font-size-p-desktop);
+}
+
+header .header-container nav a.icon {
+    display: none;
 }
 
 header .header-container nav a:hover {
@@ -232,7 +243,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 /* Infomation Sections */
 .information {
-    height: 620px;
+    /* height: 620px; */
+    height: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -249,7 +261,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .information .information-container .title {
     text-align: center;
-    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .information .information-container .title h2 {
@@ -363,7 +376,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
     margin: 0 auto;
     max-width: var(--max-width-desktop);
     min-width: var(--min-width-desktop);
-    height: 720px;
+    /* height: 720px; */
+    height: auto;
     border: 1px solid var(--bg4);
     display: flex;
     flex-direction: column;
@@ -373,8 +387,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .why-us .why-us-container .title {
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .why-us .why-us-container .title h2 {
@@ -399,8 +413,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .why-us .why-us-container .program-content .content {
@@ -439,7 +453,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
     margin: 0 auto;
     max-width: var(--max-width-desktop);
     min-width: var(--min-width-desktop);
-    height: 700px;
+    /* height: 850px; */
+    height: auto;
     border: var(--border-section);
     display: flex;
     flex-direction: column;
@@ -475,12 +490,12 @@ header .header-container .sign-in, .sign-up, .call-admin {
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .course-program .course-program-container .course-options 
-#course {
+.course {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -490,11 +505,12 @@ header .header-container .sign-in, .sign-up, .call-admin {
     margin: 1rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     background-color: white;
-    height: 375px;
+    height: 550px;
+    width: 350px;
 }
 
 .course-program .course-program-container .course-options 
-#course h2 {
+.course h2 {
     font-family: var(--font-style--2);
     font-size: 24px;
     font-weight: var(--bold);
@@ -503,33 +519,77 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .course-program .course-program-container .course-options 
-#course .content-list {
+.course .content-list {
     padding: 10px;
+    height: 300px;
+    width: 300px;
+    overflow-y: auto;
 }
 
 .course-program .course-program-container .course-options 
-#course .content-price {
+.course .content-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.course-program .course-program-container .course-options 
+.course .content-list:hover::-webkit-scrollbar {
+    width: 10px;
+}
+
+.course-program .course-program-container .course-options 
+.course .content-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.course-program .course-program-container .course-options 
+.course .content-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.course-program .course-program-container .course-options 
+.course .content-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.course-program .course-program-container .course-options 
+.course .for {
+    margin: 1rem;
+    padding: 0.25rem;
+    border-radius: 8px;
+    background-color: var(--bg4);
+}
+
+.course-program .course-program-container .course-options 
+.course .for p {
+    font-weight: bold;
+}
+
+.course-program .course-program-container .course-options 
+.course .content-price {
     font-family: var(--font-style--2);    
 }
 
 .course-program .course-program-container .course-options 
-#course .content-price h3 {
+.course .content-price h3 {
     font-size: 14px;
 }
 
 .course-program .course-program-container .course-options 
-#course .content-price h4 {
+.course .content-price h4 {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .course-program .course-program-container .course-options 
-#course ul {
+.course .content-list ul {
     list-style: none;
     text-align: left;
 }
 
 .course-program .course-program-container .course-options 
-#course li {
+.course .content-list li {
     font-family: var(--font-style--2);
     font-size: 16px;
     font-weight: var(--medium);
@@ -537,13 +597,13 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .course-program .course-program-container .course-options 
-#course li:before {
+.course .content-list li:before {
     content: '\2713';
     margin-right: 1rem;
 }
 
 .course-program .course-program-container .course-options 
-#course button {
+.course button {
     align-items: center;
     background-color: var(--bg-button);
     border: 0;
@@ -570,12 +630,12 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .course-program .course-program-container .course-options 
-#course button:hover {
+.course button:hover {
     background-color: var(--bg-button-darker);
 }
 
 .course-program .course-program-container .course-options 
-#course button.coming-soon {
+.course button.coming-soon {
     background-color: rgb(224, 80, 80);
     cursor: default;
 }
@@ -650,6 +710,7 @@ header .header-container .sign-in, .sign-up, .call-admin {
     border-radius: 1rem;
     transition: transform 0.3s ease;
     position: relative;
+    align-items: center;
 }
 
 .course-program .course-program-container .modal 
@@ -662,8 +723,8 @@ header .header-container .sign-in, .sign-up, .call-admin {
 
 .course-program .course-program-container .modal 
 .modal-card .modal-card-body .program-facility img {
-    width: 4rem;
-    height: auto;
+    width: 70px;
+    height: 70px;
     padding: 0.25rem;
 }
 
@@ -673,6 +734,13 @@ header .header-container .sign-in, .sign-up, .call-admin {
     text-align: left;
     padding: 0.5rem;
 }
+
+/* .course-program .course-program-container .modal 
+.modal-card .modal-card-body .program-facility 
+.list-facility img {
+    height: 64px;
+    width: 64px;
+} */
 
 .course-program .course-program-container .modal 
 .modal-card .modal-card-body .program-facility 
@@ -684,21 +752,23 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+.modal .modal-card .modal-card-body .course-price{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree {
+.modal .modal-card .modal-card-body .course-price .course-price-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    gap: 0.25rem;
     width: 200px;
     border-radius: 12px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     background-color: var(--bg4);
+    padding: 1rem;
 }
 
 .course-program .course-program-container .course-options
@@ -712,7 +782,7 @@ header .header-container .sign-in, .sign-up, .call-admin {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree 
+.modal .modal-card .modal-card-body .course-price .course-price-container 
 h3 {
     font-family: var(--font-style--2);
     font-size: var(--font-size-p-desktop);
@@ -720,7 +790,7 @@ h3 {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree 
+.modal .modal-card .modal-card-body .course-price .course-price-container 
 img {
     width: 100px;
     height: auto;
@@ -728,8 +798,8 @@ img {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree 
-.participant {
+.modal .modal-card .modal-card-body .course-price .course-price-container 
+.program {
     margin: 0.25rem;
     border-radius: 100px;
     background-color: var(--bg-button);
@@ -737,8 +807,8 @@ img {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree 
-.participant:hover {
+.modal .modal-card .modal-card-body .course-price .course-price-container 
+.program:hover {
     background-color: var(--bg-button-darker);
     cursor: pointer;
     transform: scale(1.05);
@@ -747,7 +817,7 @@ img {
 }
 
 .course-program .course-program-container .course-options
-.modal .modal-card .modal-card-body .course-price .degree 
+.modal .modal-card .modal-card-body .course-price .course-price-container 
 .options {
     font-family: var(--font-style--2);
     font-size: 14px;
@@ -867,14 +937,15 @@ footer a button {
     margin: 0 auto;
     max-width: var(--max-width-desktop);
     min-width: var(--min-width-desktop);
-    height: 900px;
+    /* height: 900px; */
+    height: auto;
     border: var(--border-section);
 }
 
 .guide .guide-container .title {
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .guide .guide-container .title h2 {
@@ -962,12 +1033,12 @@ footer a button {
     margin: 0 auto;
     max-width: var(--max-width-desktop);
     min-width: var(--min-width-desktop);
-    height: 300px;
-    border: var(--border-section);
+    /* height: 300px; */
+    height: auto;
 }
 
 .newsletter .wrap-newsletter {
-    margin: 3rem 10rem;
+    margin: 4rem 10rem;
     align-items: center;
     justify-content: center;
     padding: 1rem 1.5rem;
@@ -1137,7 +1208,7 @@ footer a button {
 }
 
 /* Table Layout */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
     /* Header */
     header .header-container {
         max-width: var(--max-width-tablet);
@@ -1238,17 +1309,17 @@ footer a button {
     }
 
     .course-program .course-program-container .course-options 
-    #course {
+    .course {
         height: 400px;
     }
 
     .course-program .course-program-container .course-options 
-    #course h2 {
+    .course h2 {
     font-size: 22px;
     }
 
     .course-program .course-program-container .course-options 
-    #course button {
+    .course button {
         font-size: var(--font-size-p-tablet);
     }
 
@@ -1279,7 +1350,7 @@ footer a button {
     }
 
     .course-program .course-program-container .course-options
-    .modal .modal-card .modal-card-body .course-price .degree 
+    .modal .modal-card .modal-card-body .course-price .course-price-container 
     h3 {
         font-size: var(--font-size-p-tablet);
     }
@@ -1325,6 +1396,7 @@ footer a button {
     .newsletter {
         max-width: var(--max-width-tablet);
         min-width: var(--min-width-tablet);
+        margin: 4rem auto;
     }
 
     .newsletter .wrap-newsletter {
@@ -1358,10 +1430,16 @@ footer a button {
     }
 }
 
-/* Mobile Layout */
-@media (max-width: 768px) {
+/* Mobile Layout (Small Screens) */
+@media (max-width: 767px) and (min-width: 576px) {
+    html {
+        scroll-padding-top: 208px;
+    }
+
     /* Header */
     header .header-container {
+        justify-content: space-between;
+        position: relative;
         max-width: var(--max-width-mobile);
         min-width: var(--min-width-mobile);
     }
@@ -1372,8 +1450,45 @@ footer a button {
         margin-left: 1rem;
     }
 
+    header .header-container .dropdown-toggle {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 12px;
+    }
+
+    header .header-container .dropdown-toggle:hover {
+        opacity: 0.7;
+        transition: opacity 0.2s ease-in;
+    }
+
+    header .header-container nav {
+        max-height: 0;
+        overflow: hidden; 
+        opacity: 0;
+        visibility: hidden;
+        transition: max-height 0.3s ease-out, opacity 0s ease-out, visibility 0s 0.3s; /* Transition for sliding effect */
+    }
+
+    header .header-container nav.dropdown-active {
+        max-height: 300px;
+        opacity: 1;
+        visibility: visible;
+        transition: max-height 0.3s ease-out;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        align-items: flex-end;
+    }
+
     header .header-container nav a {
         font-size: var(--font-size-p-mobile);
+        padding: 2px;
+    }
+
+    header .header-container .buttons {
+        display: none;
     }
 
     header .header-container .sign-in, .sign-up, .call-admin {
@@ -1437,7 +1552,6 @@ footer a button {
 
     /* Why Us Section */
     .why-us .why-us-container {
-        height: 500px;
         max-width: var(--max-width-mobile);
         min-width: var(--min-width-mobile);
     }
@@ -1447,8 +1561,8 @@ footer a button {
     }
 
     .why-us .why-us-container .title {
-        margin-bottom: 1rem;
-        margin-top: 0;
+        margin-bottom: 0.25rem;
+        margin-top: 0.5rem;
     }
 
     .why-us .why-us-container .title p {
@@ -1466,7 +1580,7 @@ footer a button {
 
     .why-us .why-us-container .program-content .content p {
         font-size: 13px;
-        margin-top: 1rem;
+        margin-top: 0.25rem;
     }
 
     .why-us .why-us-container .program-content .content img {
@@ -1494,23 +1608,30 @@ footer a button {
     }
 
     .course-program .course-program-container .course-options 
-    #course {
+    .course {
         gap: 0;
-        margin: 0.5rem;
+        margin: 0.25rem;
+        width: 300px;
+        height: 400px;
     }
 
     .course-program .course-program-container .course-options 
-    #course h2 {
-    font-size: 16px;
+    .course h2 {
+        font-size: 18px;
     }
 
     .course-program .course-program-container .course-options 
-    #course button {
+    .course .content-list {
+        width: auto;
+    }
+
+    .course-program .course-program-container .course-options 
+    .course button {
         font-size: var(--font-size-p-mobile);
     }
 
     .course-program .course-program-container .course-options 
-    #course li {
+    .course li {
         font-size: 14px;
     }
 
@@ -1541,9 +1662,54 @@ footer a button {
     }
 
     .course-program .course-program-container .course-options
-    .modal .modal-card .modal-card-body .course-price .degree 
+    .modal .modal-card .modal-card-body .course-price .course-price-container 
     h3 {
         font-size: var(--font-size-p-mobile);
+    }
+
+    .course-program .course-program-container .course-options 
+    .course .content-list li {
+        font-size: 14px;
+    }
+
+    .course-program .course-program-container .modal-card {
+        min-width: 576px;
+        max-width: 576px;
+        padding-top: 160px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price{
+        margin: 0.5rem;
+        gap: 10px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .course-price .course-price-container 
+    .program .price {
+        font-size: 14px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body h3 {
+        font-size: 16px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body p {
+        font-size: 14px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .program-facility
+    .list-facility h3 {
+        font-size: 16px;
+    }
+
+    .course-program .course-program-container .course-options
+    .modal .modal-card .modal-card-body .program-facility
+    .list-facility p {
+        font-size: 14px;
     }
 
     /* Mentor Section */
@@ -1575,9 +1741,25 @@ footer a button {
     }
 
     .guide .guide-container .steps {
-        /* margin-left: 10px;
-        margin-right: 10px; */
+        grid-template-areas:
+            "step-1 arrow-1 step-2"
+            ". . arrow-2"
+            "step-4 arrow-3 step-3";
+        gap: 0;
+        height: 500px;
         margin: 0;
+    }
+
+    .guide .guide-container .steps .arrow-1 {
+        transform: rotate(-35deg);
+    }
+
+    .guide .guide-container .steps .arrow-2 {
+        transform: rotate(55deg);
+    }
+
+    .guide .guide-container .steps .arrow-3 {
+        transform: rotate(150deg);
     }
 
     .guide .guide-container .steps img {
@@ -1588,7 +1770,7 @@ footer a button {
     .newsletter {
         max-width: var(--max-width-mobile);
         min-width: var(--min-width-mobile);
-        height: 200px;
+        margin: 4rem auto;
     }
 
     .newsletter .wrap-newsletter {
@@ -1619,5 +1801,9 @@ footer a button {
     .footer-page .footer {
         max-width: var(--max-width-mobile);
         min-width: var(--min-width-mobile);
+    }
+
+    .footer-page .footer .footer-container .footer-bottom .copyright {
+        font-size: 11px;
     }
 }

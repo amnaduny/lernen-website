@@ -14,7 +14,9 @@
 <body>
     <header class="header">
         <div class="header-container">
-            <a href="#" data-target="hero"><img class="logo" src="assets/logo Lernen PNG 2.png" alt="logo-lernen"></a>
+            <a href="#" data-target="hero">
+                <img class="logo" src="assets/logo Lernen PNG 2.png" alt="logo-lernen">
+            </a>
 
             <!-- navbar -->
             <nav>
@@ -25,6 +27,8 @@
                 <a href="#" data-target="guide">Panduan</a>
                 <a href="#" data-target="footer-page">Hubungi</a>
             </nav>
+
+            <div class="dropdown-toggle" onclick="toggleDropdown()">&#9776;</div>
 
             <!-- Button (Masuk, Daftar) / (Hubungi) -->
             <div class="buttons">
@@ -153,8 +157,37 @@
             </div>
             
             <div class="course-options">
+                <!-- Core Program -->
+                <div class="course">
+                    <h2>
+                        Core Program
+                    </h2>
+                    <div class="content-list">
+                        <ul>
+                            <li>Describe your Profile</li>
+                            <li>Strenghts & Weakness Analysis</li>
+                            <li>CV Building</li>
+                            <li>Campus Dream & How to Get LoA</li>
+                            <li>Motivation Letter</li>
+                            <li>Research Plan</li>
+                            <li>Interview Preparation</li>
+                            <li>Scholarship Preparation Class</li>
+                            <li>Arrival Preparation</li>
+                        </ul>
+                    </div>
+                    <div class="for">
+                        <p>SMA dan S1</p>
+                    </div>
+                    <div class="content-price">
+                        <h3>Mulai dari</h3>
+                        <h4>Rp 700.000</h4>
+                    </div>
+                    
+                    <button onclick="openModalCoreProgram();" class="button is-success">Lebih Lanjut</button>
+                </div>
+
                 <!-- Scholarship Care -->
-                <div id="course">
+                <div class="course">
                     <h2>
                         Scholarship Care
                     </h2>
@@ -163,66 +196,22 @@
                             <li>Coaching and Assistance</li>
                             <li>Proofreading</li>
                             <li>Exclusive Sharing</li>
-                            <li>Master & PhD</li>
                         </ul>
+                    </div>
+                    <div class="for">
+                        <p>S2 dan S3</p>
                     </div>
                     <div class="content-price">
                         <h3>Mulai dari</h3>
                         <h4>Rp 100.000</h4>
                     </div>
                     
-                    <button onclick="openModal();" class="button is-success">Lebih Lanjut</button>
+                    <button onclick="openModalScholarshipCare();" class="button is-success">Lebih Lanjut</button>
                 </div>
 
-                <!-- Mini Course -->
-                <div id="course">
-                    <h2>
-                        Mini Course
-                    </h2>
-                    <div class="content-list">
-                        <ul>
-                            <li>Coaching and Assistance</li>
-                            <li>Proofreading</li>
-                            <li>Exclusive Sharing</li>
-                            <li>Master & PhD</li>
-                        </ul>
-                    </div>
-                    <div class="content-price">
-                        <h3>Harga</h3>
-                        <h4>GRATIS</h4>
-                    </div>
-                    
-                    <!-- <button class="button is-success">Lebih Lanjut</button> -->
-                    <button class="coming-soon" disabled>
-                        Coming Soon
-                    </button>
-                </div>
-
-                <!-- One Shot Program -->
-                <div id="course">
-                    <h2>
-                        One Shot Program
-                    </h2>
-                    <div class="content-list">
-                        <ul>
-                            <li>Coaching and Assistance</li>
-                            <li>Proofreading</li>
-                            <li>Exclusive Sharing</li>
-                            <li>Master & PhD</li>
-                        </ul>
-                    </div>
-                    <div class="content-price">
-                        <h3>Mulai dari</h3>
-                        <h4>Rp 500.000</h4>
-                    </div>
-                    
-                    <!-- <button class="button is-success">Lebih Lanjut</button> -->
-                    <button class="coming-soon" disabled>
-                        Coming Soon
-                    </button>
-                </div>
-                
-                <div class="modal" id="modal-course-program">
+                <!-- Modal Course Program -->
+                <!-- Scholarship Care -->
+                <div class="modal" id="modal-scholarship-care">
                     <div class="modal-background"></div>
                     <div class="modal-card">
                         <header class="modal-card-head">
@@ -230,6 +219,54 @@
                             <button class="delete" aria-label="close"></button>
                         </header>
                         <section class="modal-card-body">
+                            <div class="course-price">
+                                <div class="course-price-container">
+                                    <img src="assets/modal-course-program/scholarship-care/master-degree.svg">
+
+                                    <h3>Master Degree</h3>
+                                    <div class="program" id="master-1on1"
+                                    data-message="Saya tertarik dengan program Master Degree 1 on 1 Mentoring.">
+                                        <p class="options">1 on 1 Mentoring</p>
+                                        <p class="price">Rp 270.000</p>
+                                    </div>
+                                    
+                                    <div class="program" id="master-2on1"
+                                    data-message="Saya tertarik dengan program Master Degree 2 on 1 Mentoring.">
+                                        <p class="options">2 on 1 Mentoring</p>
+                                        <p class="price">Rp 140.000</p>
+                                    </div>
+                                    
+                                    <div class="program" id="master-3on1" 
+                                    data-message="Saya tertarik dengan program Master Degree 3 on 1 Mentoring.">
+                                        <p class="options">3 on 1 Mentoring</p>
+                                        <p class="price">Rp 100.000</p>
+                                    </div>
+                                </div>
+
+                                <div class="course-price-container">
+                                    <img src="assets/modal-course-program/scholarship-care/phd-degree.svg">
+
+                                    <h3>PhD Degree</h3>
+                                    <div class="program" id="phd-1on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 1 on 1 Mentoring.">
+                                        <p class="options">1 on 1 Mentoring</p>
+                                        <p class="price">Rp 350.000</p>
+                                    </div>
+                                    
+                                    <div class="program" id="phd-2on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 2 on 1 Mentoring.">
+                                        <p class="options">2 on 1 Mentoring</p>
+                                        <p class="price">Rp 185.000</p>
+                                    </div>
+                                    
+                                    <div class="program" id="phd-3on1"
+                                    data-message="Saya tertarik dengan program PhD Degree 3 on 1 Mentoring.">
+                                        <p class="options">3 on 1 Mentoring</p>
+                                        <p class="price">Rp 150.000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <div class="intro">
                                 <h3>Apa itu Scholarship Care?</h3>
                                 <p>
@@ -246,7 +283,7 @@
                                 <h3>Fasilitas apa saja yang akan didapat?</h3>
 
                                 <div class="list-facility">
-                                    <img src="assets/modal-course-program/assistance.svg">
+                                    <img src="assets/modal-course-program/scholarship-care/coaching-and-assitance.svg">
                                     <div class="facility-content">
                                         <h3>
                                             Coaching and Assistance
@@ -258,7 +295,7 @@
                                     </div>
                                 </div>
                                 <div class="list-facility">
-                                    <img src="assets/modal-course-program/proofreading.svg">
+                                    <img src="assets/modal-course-program/scholarship-care/proofreading.svg">
                                     <div class="facility-content">
                                         <h3>
                                             Proofreading
@@ -270,7 +307,7 @@
                                     </div>
                                 </div>
                                 <div class="list-facility">
-                                    <img src="assets/modal-course-program/sharing.svg">
+                                    <img src="assets/modal-course-program/scholarship-care/exclusive-sharing.svg">
                                     <div class="facility-content">
                                         <h3>
                                             Exclusive Sharing
@@ -283,52 +320,187 @@
                                 </div>
                             </div>
 
+                            
+                        </section>
+                        <footer class="modal-card-foot">
+                            <a href="https://wa.me/+6282337506356?text=Halo%20Lernen%20Indonesia!" target="_blank">
+                                <button class="button is-warning">Tanya Admin</button>
+                            </a>
+                        </footer>
+                    </div>
+                </div>
+
+                <!-- Core Program -->
+                <div class="modal" id="modal-core-program">
+                    <div class="modal-background"></div>
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title">Core Program</p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+                        <section class="modal-card-body">
                             <div class="course-price">
-                                <h3 class="title">Harga Program</h3>
+                                <div class="course-price-container">
+                                    <img src="assets/modal-course-program/core-program/basic.svg">
 
-                                <div class="degree">
-                                    <h3>Master Degree</h3>
-                                    <img src="assets/modal-course-program/graduation.png">
-
-                                    <div class="participant" id="master-1on1"
-                                    data-message="Saya tertarik dengan program Master Degree 1 on 1 Mentoring.">
-                                        <p class="options">1 on 1 Mentoring</p>
-                                        <p class="price">Rp 270.000</p>
-                                    </div>
-                                    
-                                    <div class="participant" id="master-2on1"
-                                    data-message="Saya tertarik dengan program Master Degree 2 on 1 Mentoring.">
-                                        <p class="options">2 on 1 Mentoring</p>
-                                        <p class="price">Rp 140.000</p>
-                                    </div>
-                                    
-                                    <div class="participant" id="master-3on1" 
-                                    data-message="Saya tertarik dengan program Master Degree 3 on 1 Mentoring.">
-                                        <p class="options">3 on 1 Mentoring</p>
-                                        <p class="price">Rp 100.000</p>
+                                    <h3>
+                                        12 kali pertemuan<br>
+                                        (4 Bulan)
+                                    </h3>
+                                    <div class="program" id="basic"
+                                    data-message="Saya tertarik dengan program Core Program - Basic.">
+                                        <p class="options">Basic</p>
+                                        <p class="price">Rp 700.000</p>
                                     </div>
                                 </div>
 
-                                <div class="degree">
-                                    <h3>PhD Degree</h3>
-                                    <img src="assets/modal-course-program/graduation.png">
+                                <div class="course-price-container">
+                                    <img src="assets/modal-course-program/core-program/premium.svg">
 
-                                    <div class="participant" id="phd-1on1"
-                                    data-message="Saya tertarik dengan program PhD Degree 1 on 1 Mentoring.">
-                                        <p class="options">1 on 1 Mentoring</p>
-                                        <p class="price">Rp 350.000</p>
+                                    <h3>
+                                        23 kali pertemuan<br>
+                                        (4 Bulan)
+                                    </h3>
+                                    <div class="program" id="premium"
+                                    data-message="Saya tertarik dengan program Core Program - Premium.">
+                                        <p class="options">Premium</p>
+                                        <p class="price">Rp 1.650.000</p>
                                     </div>
-                                    
-                                    <div class="participant" id="phd-2on1"
-                                    data-message="Saya tertarik dengan program PhD Degree 2 on 1 Mentoring.">
-                                        <p class="options">2 on 1 Mentoring</p>
-                                        <p class="price">Rp 185.000</p>
+                                </div>
+
+                                <div class="course-price-container">
+                                    <img src="assets/modal-course-program/core-program/advanced.svg">
+
+                                    <h3>
+                                        23 kali pertemuan<br>
+                                        (4 Bulan)
+                                    </h3>
+                                    <div class="program" id="advanced"
+                                    data-message="Saya tertarik dengan program Core Program - Advanced.">
+                                        <p class="options">Advanced</p>
+                                        <p class="price">Rp 3.200.000</p>
                                     </div>
-                                    
-                                    <div class="participant" id="phd-3on1"
-                                    data-message="Saya tertarik dengan program PhD Degree 3 on 1 Mentoring.">
-                                        <p class="options">3 on 1 Mentoring</p>
-                                        <p class="price">Rp 150.000</p>
+                                </div>
+                            </div>
+                            <hr style="border: 1px solid transparent; width: 90%; margin: 2rem auto;">
+                            <div class="intro">
+                                <h3>Apa itu Core Program?</h3>
+                                <p>
+                                    Core Program adalah program bimbingan intensif untuk mempersiapkan studi 
+                                    lanjut ke luar negeri (S1/S2), baik dengan maupun tanpa beasiswa. Program 
+                                    ini dirancang bagi siswa SMA dan mahasiswa S1 yang ingin melanjutkan studi 
+                                    dengan percaya diri melalui pemahaman menyeluruh mengenai proses, dokumen, dan seleksi.<br>
+                                    <br>
+                                    Durasi program meliputi 12 sesi (paket basic) atau 23 sesi (paket premium dan advanced) selama 
+                                    4 bulan. Metode bimbingan meliputi pembahasan persyaratan dasar, dokumen, latihan soal, 
+                                    diskusi, peer review, dan simulasi untuk memaksimalkan pemahaman mentee.
+                                </p>
+                            </div>
+
+                            <div class="program-facility">
+                                <h3>Fasilitas apa saja yang akan didapat?</h3>
+
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/describe-your-profile.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Describe your Profile
+                                        </h3>
+                                        <p>
+                                            Mengidentifikasi dan mengomunikasikan elemen penting dari 
+                                            latar belakang akademik dan pengalaman pribadi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/strength-and-weakness-analysis.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Strengths & Weakness Analysis
+                                        </h3>
+                                        <p>
+                                            Mengevaluasi kekuatan dan kelemahan untuk mempersiapkan 
+                                            strategi pengembangan diri.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/cv-building.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            CV Building
+                                        </h3>
+                                        <p>
+                                            Menyusun CV yang menarik dan sesuai standar internasional 
+                                            untuk keperluan aplikasi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/campus-dream-and-how-to-get-loa.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Campus Dream & How to Get LoA
+                                        </h3>
+                                        <p>
+                                            Memilih kampus impian dan memahami strategi untuk mendapatkan 
+                                            Letter of Acceptance (LoA).
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/motivation-letter.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Motivation Letter
+                                        </h3>
+                                        <p>
+                                            Menulis surat motivasi yang meyakinkan dan sesuai dengan tujuan studi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/research-plan.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Research Plan (Premium & Advanced Program)
+                                        </h3>
+                                        <p>
+                                            Menyusun rencana penelitian yang sesuai dengan program studi yang dituju.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/interview-preparation.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Interview Preparation
+                                        </h3>
+                                        <p>
+                                            Melatih keterampilan menjawab pertanyaan wawancara seleksi dengan percaya diri.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/scholarship-preparation-class.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Scholarship Preparation Class
+                                        </h3>
+                                        <p>
+                                            Menyusun aplikasi dan strategi untuk mendapatkan beasiswa.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="list-facility">
+                                    <img src="assets/modal-course-program/core-program/arrival-preparation.svg">
+                                    <div class="facility-content">
+                                        <h3>
+                                            Arrival Preparation (Premium & Advanced Program)
+                                        </h3>
+                                        <p>
+                                            Mempersiapkan diri untuk kehidupan akademik dan sosial di negara tujuan.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -343,95 +515,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Mentor Section -->
-    <!-- <section class="mentor">
-        <div class="mentor-container">
-            <div class="title">
-                <h2>
-                    Pembimbing yang berkualitas dan berpengalaman
-                </h2>
-            </div>
-
-            <div class="container swiper">
-                <div class="slider-wrapper">
-                    <div class="card-list swiper-wrapper">
-                        <div class="card-item swiper-slide">
-                            <img src="card slider/images/img-1.jpg" alt="User Image" class="user-image">
-                            <h2 class="user-name">Yusril Fatahilmi</h2>
-                            <p class="user-profession">Electrical Engineer</p>
-                        </div>
-
-                        <div class="card-item swiper-slide">
-                            <img src="card slider/images/img-2.jpg" alt="User Image" class="user-image">
-                            <h2 class="user-name">Elok Paikoh</h2>
-                            <p class="user-profession">Management</p>
-                        </div>
-
-                        <div class="card-item swiper-slide">
-                            <img src="card slider/images/img-3.jpg" alt="User Image" class="user-image">
-                            <h2 class="user-name">Amnaduny Akhara</h2>
-                            <p class="user-profession">Data Science</p>
-                        </div>
-
-                        <div class="card-item swiper-slide">
-                            <img src="card slider/images/img-4.jpg" alt="User Image" class="user-image">
-                            <h2 class="user-name">Abyan</h2>
-                            <p class="user-profession">Biotech</p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-slide-button swiper-button-prev"></div>
-                    <div class="swiper-slide-button swiper-button-next"></div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Testimonial Section -->
-    <!-- <section class="testimoni">
-        <div class="title">
-            <h1>
-                Kisah Inspiratif Alumni Lernen Indonesia
-            </h1>
-        </div>
-
-        <div class="container swiper">
-            <div class="slider-wrapper">
-                <div class="card-list swiper-wrapper">
-                    <div class="card-item swiper-slide">
-                        <img src="card slider/images/img-1.jpg" alt="User Image" class="user-image">
-                        <h2 class="user-name">Fulan 1</h2>
-                        <p class="user-profession">Lernen bagus dan terpercaya</p>
-                    </div>
-
-                    <div class="card-item swiper-slide">
-                        <img src="card slider/images/img-2.jpg" alt="User Image" class="user-image">
-                        <h2 class="user-name">Fulan 2</h2>
-                        <p class="user-profession">Lernen merupakan perkursusan yang baik dan handal</p>
-                    </div>
-
-                    <div class="card-item swiper-slide">
-                        <img src="card slider/images/img-3.jpg" alt="User Image" class="user-image">
-                        <h2 class="user-name">Fulan 3</h2>
-                        <p class="user-profession">Lernen memberikan insight yang sangat lengkap</p>
-                    </div>
-
-                    <div class="card-item swiper-slide">
-                        <img src="card slider/images/img-4.jpg" alt="User Image" class="user-image">
-                        <h2 class="user-name">Fulan 4</h2>
-                        <p class="user-profession">Maju jaya jaya jaya</p>
-                    </div>
-                </div>
-
-                <div class="swiper-pagination"></div>
-                <div class="swiper-slide-button swiper-button-prev"></div>
-                <div class="swiper-slide-button swiper-button-next"></div>
-            </div>
-        </div>
-    </section> -->
-
+    
     <!-- Guide Section -->
     <section class="guide">
         <div class="guide-container">
@@ -501,8 +585,6 @@
                 <!-- Left Side: Company Info, Image, Social Media -->
                 <div class="footer-left">
                     <a href="#" data-target="hero"><img class="logo" src="assets\logo Lernen PNG 2.png" alt="logo-lernen"></a>
-
-                    <!-- <img src="assets\logo Lernen PNG 2.png" alt="Company Logo" class="logo"> -->
 
                     <div class="address">
                         <p>Perum Citra Asri Residen Blok J No 4 RT 05 RW 09</p>

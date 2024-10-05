@@ -107,10 +107,18 @@ const swiper = new Swiper('.slider-wrapper', {
 //--- End of Slider Wrapper Mentor Page ---//
 
 //--- Modal Course Program ---//
-function openModal()  
+// Scholarship Care
+function openModalScholarshipCare()  
 { 
     // is-active class of the modal 
-    document.getElementById("modal-course-program").classList.add("is-active"); 
+    document.getElementById("modal-scholarship-care").classList.add("is-active"); 
+} 
+
+// Core Program
+function openModalCoreProgram()  
+{ 
+    // is-active class of the modal 
+    document.getElementById("modal-core-program").classList.add("is-active"); 
 } 
 
 // Adding event listeners for closing the modal 
@@ -129,12 +137,15 @@ document.querySelectorAll(
 
     }); 
 
-const modal = document.querySelector('.modal');
+// Select all elements with the class 'modal'
+const modals = document.querySelectorAll('.modal');
 
-// Add event listener to close the modal when pressing the 'Esc' key
+// Add event listener to close all modals when pressing the 'Esc' key
 document.addEventListener('keydown', function(event) {
-    if (event.key == 'Escape') {
-        modal.classList.remove('is-active');
+    if (event.key === 'Escape') {
+        modals.forEach(function(modal) {
+            modal.classList.remove('is-active');
+        });
     }
 });
 
@@ -148,10 +159,11 @@ function createWhatsAppLink(message) {
     window.open(waLink, '_blank');
 }
 
-// Add click event listeners to all participants
-document.querySelectorAll('.participant').forEach(participant => {
-    participant.addEventListener('click', function() {
-        const message = this.getAttribute('data-message');
+// Add click event listeners to all programs
+document.querySelectorAll('.program').forEach(program => {
+    program.addEventListener('click', function() {
+        let message = this.getAttribute('data-message');
+        console.log(message);
         createWhatsAppLink(message);
     });
 });
@@ -162,3 +174,34 @@ document.querySelectorAll('.participant').forEach(participant => {
 function registWebinar29sept() {
     window.open("https://tinyurl.com/MengubahMimpiMenjadiGelar","_blank");
 }
+
+//--- Dropdown Navbar ---//
+function toggleDropdown() {
+    const navbar = document.querySelector('header .header-container nav');
+    const dropdownToggle = document.querySelector('header .header-container .dropdown-toggle');
+
+    navbar.classList.toggle('dropdown-active'); // Toggle the dropdown class
+    
+    // Check if nav has the dropdown-active class
+    if (navbar.classList.contains('dropdown-active')) {
+        dropdownToggle.classList.add('hide'); 
+    } else {
+        dropdownToggle.classList.remove('hide'); 
+    }
+}
+
+// Function to close the dropdown if clicked outside of it
+function closeDropdown(event) {
+    const navbar = document.querySelector('header .header-container nav');
+    const headerContainer = document.querySelector('header .header-container');
+
+    // Check if the click was outside the header container
+    if (!headerContainer.contains(event.target) && navbar.classList.contains('dropdown-active')) {
+        navbar.classList.remove('dropdown-active'); // Hide the dropdown
+        const dropdownToggle = document.querySelector('header .header-container .dropdown-toggle');
+        dropdownToggle.classList.remove('hide'); // Show the dropdown toggle again
+    }
+}
+
+// Add event listener to the document for clicks
+document.addEventListener('click', closeDropdown);

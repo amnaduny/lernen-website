@@ -1136,11 +1136,13 @@ footer a button {
     margin-bottom: 2rem;
 }
 
-.footer-page .footer .footer-container .footer-left img {
+.footer-page .footer .footer-container .footer-left 
+img {
     width: 80px;
 }
 
-.footer-page .footer .footer-container .footer-left .address {
+.footer-page .footer .footer-container .footer-left 
+.address {
     text-align: left;
     font-family: var(--font-style--2);
     font-size: 12px;
@@ -1149,7 +1151,8 @@ footer a button {
     margin-bottom: 15px;
 }
 
-.footer-page .footer .footer-container .footer-left .social-media-footer {
+.footer-page .footer .footer-container .footer-left 
+.social-media-footer {
     text-align: left;
     font-family: var(--font-style--2);
     font-size: 12px;
@@ -1158,16 +1161,19 @@ footer a button {
     margin-bottom: 15px;
 }
 
-.footer-page .footer .footer-container .footer-left .social-media-logo a {
+.footer-page .footer .footer-container .footer-left 
+.social-media-logo a {
     text-decoration: none;
 }
 
-.footer-page .footer .footer-container .footer-left .social-media-logo img {
+.footer-page .footer .footer-container .footer-left 
+.social-media-logo img {
     width: 20px;
     height: auto;
 }
 
-.footer-page .footer .footer-container .footer-right .footer-menu {
+.footer-page .footer .footer-container .footer-right 
+.footer-menu {
     list-style: none;
     text-align: left;
     margin-left: 200px;
@@ -1178,19 +1184,22 @@ footer a button {
     gap: 20px;
 }
 
-.footer-page .footer .footer-container .footer-right .footer-menu li {
+.footer-page .footer .footer-container .footer-right 
+.footer-menu li {
     margin: 0;
     font-family: var(--font-style--2);
     font-size: 12px;
     font-weight: var(--semi-bold);
 }
 
-.footer-page .footer .footer-container .footer-right .footer-menu a {
+.footer-page .footer .footer-container .footer-right 
+.footer-menu a {
     text-decoration: none;
     color: black;
 }
 
-.footer-page .footer .footer-container .footer-right .footer-menu a:hover {
+.footer-page .footer .footer-container .footer-right 
+.footer-menu a:hover {
     cursor: pointer;
 }
 
@@ -1202,7 +1211,8 @@ footer a button {
     border: 1px solid black;
 }
 
-.footer-page .footer .footer-container .footer-bottom .copyright {
+.footer-page .footer .footer-container .footer-bottom 
+.copyright {
     text-align: center;
     font-family: var(--font-style--2);
     font-size: 13px;
@@ -2020,15 +2030,15 @@ footer a button {
         gap: 0;
         padding: 0.25rem;
         margin: 0.25rem;
-        width: 200px;
-        height: 300px;
+        width: 160px;
+        height: 350px;
     }
 
     .course-program .course-program-container .course-options 
     .course .for {
         font-size: 14px;
         width: 8rem;
-        margin: 0 auto;
+        margin: 0.25rem auto;
     }
 
     .course-program .course-program-container .course-options 
@@ -2039,6 +2049,7 @@ footer a button {
     .course-program .course-program-container .course-options 
     .course .content-list {
         width: auto;
+        margin: 0.5rem;
     }
 
     .course-program .course-program-container .course-options 
@@ -2064,7 +2075,12 @@ footer a button {
 
     .course-program .course-program-container .course-options 
     .course button {
-        font-size: var(--font-size-h4-small-mobile);
+        font-size: 12px;
+        min-width: 125px;
+        min-height: 30px;
+        max-width: 125px;
+        max-height: 30px;
+        margin: 0.25rem auto;
     }
 
     .course-program .course-program-container .modal 
@@ -2137,5 +2153,106 @@ footer a button {
     .modal .modal-card .modal-card-body .program-facility
     .list-facility p {
         font-size: 14px;
+    }
+
+    /* Guide Section */
+    .guide .guide-container {
+        max-width: var(--max-width-small-mobile);
+        min-width: var(--min-width-small-mobile);
+    }
+
+    .guide .guide-container .title h2 {
+        font-size: var(--font-size-h2-small-mobile);
+    }
+
+    .guide .guide-container .title p {
+        font-size: var(--font-size-p-small-mobile);
+    }
+
+    .guide .guide-container .steps p {
+        font-size: var(--font-size-p-small-mobile);
+    }
+
+    .guide .guide-container .steps {
+        grid-template-areas:
+            "step-1 arrow-1 step-2"
+            ". . arrow-2"
+            "step-4 arrow-3 step-3";
+        gap: 0;
+        height: 400px;
+        margin: 0;
+    }
+
+    .guide .guide-container .steps .arrow-1 {
+        transform: rotate(-35deg);
+    }
+
+    .guide .guide-container .steps .arrow-2 {
+        transform: rotate(55deg);
+    }
+
+    .guide .guide-container .steps .arrow-3 {
+        transform: rotate(150deg);
+    }
+
+    .guide .guide-container .steps img {
+        max-width: 120px;
+    }
+
+    .guide .guide-container .steps .arrow-1 img,
+    .guide .guide-container .steps .arrow-2 img,
+    .guide .guide-container .steps .arrow-3 img {
+        width: 40px;
+        height: auto;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        max-width: var(--max-width-small-mobile);
+        min-width: var(--min-width-small-mobile);
+        margin: 1rem auto;
+    }
+
+    .newsletter .wrap-newsletter {
+        margin: 0 auto;
+    }
+
+    .newsletter .wrap-newsletter .title h3 {
+        font-size: var(--font-size-h3-small-mobile);
+    }
+
+    .newsletter .wrap-newsletter .title p {
+        font-size: var(--font-size-p-small-mobile);
+    }
+
+    .newsletter .wrap-newsletter button {
+        font-size: var(--font-size-p-small-mobile);
+    }
+
+    .newsletter img {
+        display: none;
+    }
+
+    /* Footer Section */
+    .footer-page .footer {
+        max-width: var(--max-width-small-mobile);
+        min-width: var(--min-width-small-mobile);
+    }
+
+    .footer-page .footer .footer-container .footer-left {
+        display: none;
+    }
+
+    .footer-page .footer .footer-container .footer-right {
+        display: none;
+    }
+
+    .footer-page .footer .footer-container .footer-bottom hr {
+        display: none;
+    }
+
+    .footer-page .footer .footer-container .footer-bottom 
+    .copyright {
+        font-size: 10px;
     }
 }

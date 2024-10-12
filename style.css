@@ -290,15 +290,59 @@ html {
         scroll-padding-top: 300px;
     }
 
-    .navbar li {
+    .responsive-text h1 {
+        font-size: 28px;
+    }
+
+    .responsive-text h2 {
+        font-size: 20px;
+    }
+
+    .responsive-text h4 {
         font-size: 14px;
+    }
+
+    .responsive-text h5 {
+        font-size: 13px;
+    }
+
+    .responsive-text h6 {
+        font-size: 10px;
+    }
+
+    .responsive-text p {
+        font-size: 11px;
+    }
+
+    .navbar li {
+        font-size: 11px;
     }
 
     .btn.custom-btn {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     .navbar-signup {
+        display: none !important;
+    }
+
+    /* Information Section */
+    .information .img-content {
+        max-width: 70%;
+    }
+
+    /* Why Us Section */
+    .why-us-content img {
+        width: 30%;
+        height: 30%;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        text-align: center;
+    }
+    
+    .newsletter #imageNewsletter {
         display: none !important;
     }
 }
@@ -344,10 +388,24 @@ html {
         display: none !important;
     }
 
+    /* Information Section */
+    .information .img-content {
+        max-width: 70%;
+    }
+
     /* Why Us Section */
     .why-us-content img {
         width: 30%;
         height: 30%;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        text-align: center;
+    }
+
+    .newsletter #imageNewsletter {
+        display: none !important;
     }
 }
 
@@ -393,6 +451,12 @@ html {
         display: none !important;
     }
 
+    /* Information Section */
+    .information .img-content {
+        max-width: 50%;
+    }
+
+    /* Why Us Section */
     .why-us-content img {
         width: 120px;
         height: 120px;

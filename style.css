@@ -159,13 +159,16 @@ html {
 }
 
 /* Hero Section */
+.hero {
+    background-color: var(--bg4);
+}
+
 .hero .hero-row {
     margin: 5rem;
 }
 
 .hero .hero-image {
-    /* width: 800px; */
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
 }
 
@@ -374,6 +377,20 @@ html {
         margin-right: 0;
     }
 
+    /* Hero Section */
+    .hero .hero-image {
+        margin-bottom: 2rem;
+        /* max-width: 80%; */
+    }
+
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* Information Section */
     .information .img-content {
         max-width: 70%;
@@ -481,6 +498,19 @@ html {
         display: none !important;
     }
 
+    /* Hero Section */
+    .hero .hero-image {
+        margin-bottom: 2rem;
+    }
+
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* Information Section */
     .information .img-content {
         max-width: 70%;
@@ -504,6 +534,41 @@ html {
     .program-section .carousel-control-prev img,
     .program-section .carousel-control-next img {
         width: 1.5rem;
+    }
+
+    /* Guide Section */
+    .guide-section {
+        display: none;
+    }
+
+    /* Guide Section Mobile*/
+    .guide-section-mobile {
+        display: block;
+    }
+
+    .guide-section-mobile .content {
+        max-width: 400px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+    }
+
+    .guide-section-mobile .content p {
+        margin: 0;
+    }
+
+    .guide-section-mobile .arrow {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .guide-section-mobile .arrow img {
+        width: 32px;
+        height: auto;
+        transform: rotate(180deg);
     }
 
     /* Newsletter Section */
@@ -556,6 +621,20 @@ html {
 
     .navbar-signup {
         display: none !important;
+    }
+
+    /* Hero Section */
+    .hero .hero-image {
+        margin-bottom: 2rem;
+        /* max-width: 80%; */
+    }
+
+    .hero .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Information Section */

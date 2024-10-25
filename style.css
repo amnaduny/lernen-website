@@ -210,6 +210,11 @@ html {
     max-height: 450px;
 }
 
+.program-section .card-body img {
+    width: 250px;
+    height: 200px;
+}
+
 .program-section .card-body p {
     margin: 0;
 }
@@ -422,8 +427,14 @@ html {
         display: block;
     }
 
+    .guide-section-mobile .content img {
+        max-width: 64px;
+        height: auto;
+        margin-right: 1rem;
+    }
+
     .guide-section-mobile .content {
-        max-width: 200px;
+        max-width: 300px;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         padding-right: 1rem;
@@ -544,6 +555,12 @@ html {
     /* Guide Section Mobile*/
     .guide-section-mobile {
         display: block;
+    }
+
+    .guide-section-mobile .content img {
+        max-width: 86px;
+        height: auto;
+        margin-right: 1rem;
     }
 
     .guide-section-mobile .content {

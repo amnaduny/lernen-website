@@ -90,6 +90,17 @@ html {
     padding: 0.25rem;
 }
 
+.check-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.check-list li::before {
+    content: "✔";
+    color: rgb(0, 0, 0);
+    margin-right: 8px;
+}
+
 /* Navbar */
 .navbar {
     position: sticky;
@@ -210,10 +221,11 @@ html {
     max-height: 450px;
 }
 
-.program-section .card-body img {
-    width: 250px;
-    height: 200px;
-}
+.program-section .card-body img { 
+    width: 175px;
+    height: 150px;
+    margin-bottom: 1rem;
+} 
 
 .program-section .card-body p {
     margin: 0;
@@ -253,8 +265,8 @@ html {
 }
 
 .mentor-section .carousel-item img {
-    height: 100%;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 .mentor-section .carousel-control-prev-icon,
@@ -406,9 +418,19 @@ html {
         width: 200px;
     }
 
+    .program-section .card-body img {
+        width: 125px;
+        height: 100px;
+    }
+
     .program-section .carousel-control-prev img,
     .program-section .carousel-control-next img {
         width: 1rem;
+    }
+
+    /* Mentor Section */
+    .mentor-section .carousel-item .mentor-desc {
+        margin-top: 1rem;
     }
 
     /* Why Us Section */
@@ -535,7 +557,12 @@ html {
 
     /* Program Section */
     .program-section .card-body {
-        max-height: 400px;
+        height: 400px;
+    }
+
+    .program-section .card-body img {
+        width: 150px;
+        height: 100px;
     }
 
     .program-section .card {
@@ -545,6 +572,11 @@ html {
     .program-section .carousel-control-prev img,
     .program-section .carousel-control-next img {
         width: 1.5rem;
+    }
+
+    /* Mentor Section */
+    .mentor-section .carousel-item .mentor-desc {
+        margin-top: 1rem;
     }
 
     /* Guide Section */

@@ -453,7 +453,7 @@
     <!-- Mentor Section -->
     <section class="mentor-section" id="mentor-section">
         <div class="container">
-            <div class="title responsive-text text-center mb-5" data-aos="zoom-in">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
                 <h2>
                     Dibimbing oleh Mentor-Mentor yang Keren 
                     dan Berkualitas
@@ -463,129 +463,422 @@
                     LPDP, MEXT, Erasmus Mundus dan program beasiswa bergengsi lainnya
                 </p>
             </div>
-
-            <!-- Carousel -->
-            <div id="carouselMentor" class="carousel slide" data-ride="carousel" data-interval="4000" data-aos="zoom-in">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselMentor" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselMentor" data-slide-to="1"></li>
-                    <li data-target="#carouselMentor" data-slide-to="2"></li>
-                    <li data-target="#carouselMentor" data-slide-to="3"></li>
-                    <li data-target="#carouselMentor" data-slide-to="4"></li>
-                    <li data-target="#carouselMentor" data-slide-to="5"></li>
-                </ol>
-                <div class="carousel-inner responsive-text">
+            
+            <!-- for big screen (min-width 992px), 3 cards -->
+            <div id="carouselMentorBigScreen" class="carousel carousel-dark slide d-none d-lg-block">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
                     <div class="carousel-item active">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/rafa.svg" class="d-block" alt="Image 1" style="width: 400px; height: 400px;">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/haniswita.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Haniswita</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Fish-microbe Interaction</li>
+                                        <li>Vliruous Scholarship and PhD University Employee</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">RAFA LISTYANI RAHMAN</h3>
-                                    <ul class="check-list">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/radesma-hermawan.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Radesma S H.</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Urban Planner, Sociologist</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rey-abraham.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rey Abraham</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7.5</li>
+                                        <li>University of Manchester, UK</li>
+                                        <li>Development Studies</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rafa.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rafa Listyani Rahman</h5>
+                                    <ul class="card-text check-list">
+                                        <li>TOEFL ITP 577</li>
+                                        <li>Maria Curie-Skłodowska University, Poland</li>
+                                        <li>Biologist</li>
                                         <li>Stefan Banach Scholarship Awardee</li>
-                                        <li>Master of Molecular Biology</li>
-                                        <li>University of Maria Curie-Skłodowska, Lublin, Poland</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/kholqillah-ardhian-ilman.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Kholqillah Ardhian Ilman</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7</li>
+                                        <li>Kanazawa University, Japan</li>
+                                        <li>Mechanical Engineering, Material Engineering, Metalurgy</li>
+                                        <li>MEXT Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/dwi-nining-lestari.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Dwi Nining Lestari</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Jagiellonian University, Poland</li>
+                                        <li>Environmental Specialist</li>
+                                        <li>Bridging Course Programs, Stefan Banach Scholarship Awardee</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- slide 3 -->
                     <div class="carousel-item">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/naura.jpeg" class="d-block" alt="Image 2" style="width: 400px; height: 400px;">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/adi-kusmayadi.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Adi Kusmayadi</h5>
+                                    <ul class="card-text check-list">
+                                        <li>Tunghai University, Taiwan</li>
+                                        <li>Bioenergy, Biorefinery, Circular Economy, Waste Management</li>
+                                        <li>Beasiswa Kampus di Taiwan</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">NAURAH NADZIFAH</h3>
-                                    <ul class="check-list">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/praniti-herma.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Praniti Herma Sunaryo</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 8</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Forest and Nature Conservationist</li>
                                         <li>LPDP Awardee</li>
-                                        <li>Master of Sustainable Business and Innovation</li>
-                                        <li>Wageningen University and Research, Wageningen, Netherland</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/syarifatul-umam.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Syarifatul Umam</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7.5</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>UX/CX Research, Entrepreneurship, Mental Fitness</li>
+                                        <li>LPDP Awardee</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- slide 4 -->
                     <div class="carousel-item">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/nurfitriani-marsuki.svg" class="d-block" alt="Image 3" style="width: 400px; height: 400px;">
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">NURFITRIANI MARSUKI</h3>
-                                    <ul class="check-list">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/ayunda-putri.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ayunda Dewi Jayanti Jilan Putri</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Vrije Universiteit Amsterdam, Netherlands</li>
+                                        <li>Medical, International Public Health, Policy</li>
                                         <li>LPDP Awardee</li>
-                                        <li>Master of Applied Cognitive Psychology</li>
-                                        <li>Universiteit Utrecht, Utrecht, Netherland</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/nurfitriani-marsuki.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Nurfitriani Marsuki</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>Applied Cognitive Psychology</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/naura.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Naurah Nadzifah</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Marketing and Consumer Behaviour Specialist / Sustainable Business Specialist</li>
+                                        <li>BPI-BIM, Bridging Course, Beasiswa PPA</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/praniti-herma.svg" class="d-block" alt="Image 3" style="width: 400px; height: 400px;">
+
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorBigScreen" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorBigScreen" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- for medium screen (width 768px - 992px ), 2 cards -->
+            <div id="carouselMentorMediumScreen" class="carousel carousel-dark slide d-none d-md-block d-lg-none">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/haniswita.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Haniswita</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Fish-microbe Interaction</li>
+                                        <li>Vliruous Scholarship and PhD University Employee</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">PRANITI HERMA SUNARYO</h3>
-                                    <ul class="check-list">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/radesma-hermawan.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Radesma S H.</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Urban Planner, Sociologist</li>
                                         <li>LPDP Awardee</li>
-                                        <li>Master of Science in Forest and Nature Conservation</li>
-                                        <li>Wageningen University and Research, Wageningen, Netherland</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- slide 2 -->
                     <div class="carousel-item">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/rey-abraham.svg" class="d-block" alt="Image 3" style="width: 400px; height: 400px;">
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">REY ABRAHAM</h3>
-                                    <ul class="check-list">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rey-abraham.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rey Abraham</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS Score 7.5</li>
+                                        <li>University of Manchester, UK</li>
+                                        <li>Development Studies</li>
                                         <li>LPDP Awardee</li>
-                                        <li>Master of Science, Global Development</li>
-                                        <li>University of Manchester, Manchester, England</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rafa.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rafa Listyani Rahman</h5>
+                                    <ul class="card-text check-list">
+                                        <li>TOEFL ITP 577</li>
+                                        <li>Maria Curie-Skłodowska University, Poland</li>
+                                        <li>Biologist</li>
+                                        <li>Stefan Banach Scholarship Awardee</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- slide 3 -->
                     <div class="carousel-item">
-                        <div class="row h-100">
-                            <div class="col-md-6 d-flex justify-content-center align-items-center">
-                                <img src="assets/mentor-section/syarifatul-umam.svg" class="d-block" alt="Image 3" style="width: 400px; height: 400px;">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/kholqillah-ardhian-ilman.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Kholqillah Ardhian Ilman</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7</li>
+                                        <li>Kanazawa University, Japan</li>
+                                        <li>Mechanical Engineering, Material Engineering, Metalurgy</li>
+                                        <li>MEXT Awardee</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-md-6 d-flex align-items-center">
-                                <div class="d-flex flex-column w-100 mentor-desc">
-                                    <h3 class="text-center">SYARIFATUL UMAM</h3>
-                                    <ul class="check-list">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/dwi-nining-lestari.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Dwi Nining Lestari</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Jagiellonian University, Poland</li>
+                                        <li>Environmental Specialist</li>
+                                        <li>Bridging Course Programs, Stefan Banach Scholarship Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/adi-kusmayadi.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Adi Kusmayadi</h5>
+                                    <ul class="card-text check-list">
+                                        <li>Tunghai University, Taiwan</li>
+                                        <li>Bioenergy, Biorefinery, Circular Economy, Waste Management</li>
+                                        <li>Beasiswa Kampus di Taiwan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/praniti-herma.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Praniti Herma Sunaryo</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 8</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Forest and Nature Conservationist</li>
                                         <li>LPDP Awardee</li>
-                                        <li>Master of Business Administration</li>
-                                        <li>University of Maryland, College Park – Smith School of Business, United States</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 5 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/syarifatul-umam.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Syarifatul Umam</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7.5</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>UX/CX Research, Entrepreneurship, Mental Fitness</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/ayunda-putri.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ayunda Dewi Jayanti Jilan Putri</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Vrije Universiteit Amsterdam, Netherlands</li>
+                                        <li>Medical, International Public Health, Policy</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 6 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/nurfitriani-marsuki.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Nurfitriani Marsuki</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 7</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>Applied Cognitive Psychology</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/naura.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Naurah Nadzifah</h5>
+                                    <ul class="card-text check-list">
+                                        <li>IELTS 6.5</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Marketing and Consumer Behaviour Specialist / Sustainable Business Specialist</li>
+                                        <li>BPI-BIM, Bridging Course, Beasiswa PPA</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev d-flex align-items-center justify-content-start" href="#carouselMentor" role="button" data-slide="prev">
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorMediumScreen" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                </a>
-                <a class="carousel-control-next d-flex align-items-center justify-content-end" href="#carouselMentor" role="button" data-slide="next">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorMediumScreen" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only"></span>
-                </a>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>

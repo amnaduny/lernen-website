@@ -101,6 +101,10 @@ html {
     margin-right: 8px;
 }
 
+.no-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+}
+  
 /* Navbar */
 .navbar {
     position: sticky;
@@ -184,6 +188,13 @@ html {
 }
 
 /* Information Section */
+.information {
+    background: url('assets/background-sections.svg') no-repeat center center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-blend-mode: overlay;
+    padding: 3rem;
+}
 .information .img-content {
     max-width: 45%;
     height: auto;
@@ -191,8 +202,11 @@ html {
 
 /* Why Us Section */
 .why-us {
+    background: url('assets/background-sections.svg') no-repeat center center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-blend-mode: overlay;
     padding: 3rem;
-    background-color: var(--bg4);
 }
 
 .why-us-content img {
@@ -212,6 +226,7 @@ html {
 
 /* Program Section */
 .program-section {
+    background-color: var(--bg4);
     padding: 3rem;
 }
 
@@ -221,7 +236,7 @@ html {
 
 .program-section .cards-wrapper {
     display: flex;
-    margin: 6rem 6rem;
+    /* margin: 6rem 6rem; */
     justify-content: center;
 }
 
@@ -263,8 +278,11 @@ html {
 
 /* Mentor Section */
 .mentor-section {
+    background: url('assets/background-sections.svg') no-repeat center center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-blend-mode: overlay;
     padding: 3rem;
-    background-color: var(--bg4);
 }
 
 .mentor-section .carousel-inner {
@@ -315,6 +333,7 @@ html {
 
 /* Guide Section */
 .guide-section {
+    background-color: var(--bg4);
     padding: 3rem;
 }
 

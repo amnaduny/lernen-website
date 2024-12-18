@@ -186,270 +186,434 @@
     </section>
 
     <!-- Programs Section -->
-    <section class="program-section container" id="program-section">
-        <div class="container my-5">
-            <div class="title responsive-text text-center mb-5" data-aos="zoom-in">
-                <h2>Program Kursus</h2>
+    <section class="program-section" id="program-section">
+        <div class="container">
+            <div class="title responsive-text text-center" data-aos="zoom-in">
+                <h2>
+                    Program Kursus
+                </h2>
                 <p>
-                    Lernen mewujudkan potensi terbaik Anda 
-                    melalui bimbingan belajar yang interaktif 
-                    dan fleksibel !!!
+                    Lernen mewujudkan potensi terbaik Anda melalui bimbingan belajar yang interaktif dan fleksibel !!!
                 </p>
             </div>
-
-            <!-- Carousel -->
-            <div id="carouselPrograms" class="carousel slide" data-ride="carousel" data-interval="4000" data-aos="zoom-in">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselPrograms" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselPrograms" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                </div>
-                <div class="carousel-inner responsive-text">
+            
+            <!-- for big screen (min-width 992px), 3 cards -->
+            <div id="carouselMentorBigScreenProgramSection" class="carousel carousel-dark slide d-none d-lg-block" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
                     <div class="carousel-item active">
-                        <div class="row h-100">
-                            <!-- Core Program -->
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card text-center my-2">
-                                    <div class="card-body responsive-text">
-                                        <img src="assets/programs-section/core-program_.svg" class="card-img">
-                                        <div class="for text-center">
-                                            <p>Persiapan <br>S1 dan S2</p>
-                                        </div>
-                                        <h4 class="text-center mb-3">Core<br> Program</h4>
-                                        <div class="content-price my-3 text-center">
-                                            <h6>Mulai dari</h6>
-                                            <h5>Rp 700.000</h5>
-                                        </div>
-                                        <div class="d-flex mx-2">
-                                            <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
-                                        </div>
-                                        <!-- Modal Core Program -->
-                                        <!-- <div class="modal fade" id="infoCoreProgram" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h2 class="modal-title" id="infoModalLabel">Core Program</h2>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="intro">
-                                                            <h4>Apa itu Core Program?</h4>
-                                                            <p>
-                                                                Core Program adalah program bimbingan intensif untuk mempersiapkan studi 
-                                                                lanjut ke luar negeri (S1/S2), baik dengan maupun tanpa beasiswa. Program 
-                                                                ini dirancang bagi siswa SMA dan mahasiswa S1 yang ingin melanjutkan studi 
-                                                                dengan percaya diri melalui pemahaman menyeluruh mengenai proses, dokumen, dan seleksi.<br>
-                                                                <br>
-                                                                Durasi program meliputi 12 sesi (paket basic) atau 23 sesi (paket premium dan advanced) selama 
-                                                                4 bulan. Metode bimbingan meliputi pembahasan persyaratan dasar, dokumen, latihan soal, 
-                                                                diskusi, peer review, dan simulasi untuk memaksimalkan pemahaman mentee.
-                                                            </p>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                        <div class="cards-wrapper text-center">
+                            <!-- CORE PROGRAM -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/core-program_.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        CORE PROGRAM
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk
+                                            <br>
+                                            S1 dan S2
+                                        </p>
                                     </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 10 peserta*</li>
+                                        <li>12 sampai 23 pertemuan*</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 700.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
                                 </div>
                             </div>
-
-                            <!-- Scholarship Care -->
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card text-center my-2">
-                                    <div class="card-body responsive-text">
-                                        <img src="assets/programs-section/scholarship-care.svg" class="card-img">
-                                        <div class="for">
-                                            <p>Untuk <br>S1, S2, S3</p>
-                                        </div>
-                                        <h4 class="text-center mb-3">Scholarship<br> Care</h4>
-                                        <div class="content-price my-3 text-center">
-                                            <h6>Mulai dari</h6>
-                                            <h5>Rp 100.000</h5>
-                                        </div>
-                                        <div class="d-flex mx-2">
-                                            <a href="#" class="btn custom-btn d-lg-block mx-auto">Lebih Lanjut</a>
-                                        </div>
+                            <!-- SCHOLARSHIP CARE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/scholarship-care.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        SCHOLARSHIP CARE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk semua jenjang 
+                                            <br>
+                                            S1, S2 & S3
+                                        </p>
                                     </div>
+                                    
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row h-100">
-                            <!-- One Shot Program -->
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card text-center my-2">
-                                    <div class="card-body responsive-text">
-                                        <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                                        <div class="for">
-                                            <p>Untuk <br>S1</p>
-                                        </div>
-                                        <h4 class="text-center mb-3">One Shot<br> Program</h4>
-                                        <div class="content-price my-3 text-center">
-                                            <h6>Mulai dari</h6>
-                                            <h5>-</h5>
-                                        </div>
-                                        <div class="d-flex mx-2">
-                                            <a href="#" class="btn custom-btn d-lg-block mx-auto disabled">Coming Soon</a>
-                                        </div>
-                                    </div>
+                            <!-- MINI COURSE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="">
                                 </div>
-                            </div>
-
-                            <!-- Coming Soon -->
-                            <div class="col d-flex justify-content-center align-items-center">
-                                <div class="card text-center my-2">
-                                    <div class="card-body responsive-text">
-                                        <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                                        <div class="for">
-                                            <p>Untuk <br>S1</p>
-                                        </div>
-                                        <h4 class="text-center mb-3">Coming<br> Soon</h4>
-                                        <div class="content-price my-3 text-center">
-                                            <h6>Mulai dari</h6>
-                                            <h5>-</h5>
-                                        </div>
-                                        <div class="d-flex mx-2">
-                                            <a href="#" class="btn custom-btn d-lg-block mx-auto disabled">Coming Soon</a>
-                                        </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        MINI COURSE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk 
+                                            <br>
+                                            S1 & S2
+                                        </p>
                                     </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev d-flex align-items-center justify-content-start" type="button" data-bs-target="#carouselPrograms" data-bs-slide="prev">
-                    <img src="assets/programs-section/control-icon.svg" alt="Preview" style="transform: rotate(180deg);">
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorBigScreenProgramSection" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next d-flex align-items-center justify-content-end" type="button" data-bs-target="#carouselPrograms" data-bs-slide="next">
-                    <img src="assets/programs-section/control-icon.svg" alt="Next">
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorBigScreenProgramSection" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            
-            <!-- <div class="row"> -->
-                <!-- Core Program -->
-                <!-- <div class="col d-flex justify-content-center align-items-center">
-                    <div class="card my-2">
-                        <div class="card-body responsive-text">
-                            <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                            <div class="for">
-                                <p>Persiapan <br>S1 dan S2</p>
-                            </div>
-                            <h4 class="text-center mb-3">Core Program</h4>
-                            <div class="content-price my-3 text-center">
-                                <h6>Mulai dari</h6>
-                                <h5>Rp 700.000</h5>
-                            </div>
-                            <div class="d-flex mx-2">
-                                <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
-                            </div> -->
-                            <!-- Modal Core Program -->
-                            <!-- <div class="modal fade" id="infoCoreProgram" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2 class="modal-title" id="infoModalLabel">Core Program</h2>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <div class="intro">
-                                                <h4>Apa itu Core Program?</h4>
-                                                <p>
-                                                    Core Program adalah program bimbingan intensif untuk mempersiapkan studi 
-                                                    lanjut ke luar negeri (S1/S2), baik dengan maupun tanpa beasiswa. Program 
-                                                    ini dirancang bagi siswa SMA dan mahasiswa S1 yang ingin melanjutkan studi 
-                                                    dengan percaya diri melalui pemahaman menyeluruh mengenai proses, dokumen, dan seleksi.<br>
-                                                    <br>
-                                                    Durasi program meliputi 12 sesi (paket basic) atau 23 sesi (paket premium dan advanced) selama 
-                                                    4 bulan. Metode bimbingan meliputi pembahasan persyaratan dasar, dokumen, latihan soal, 
-                                                    diskusi, peer review, dan simulasi untuk memaksimalkan pemahaman mentee.
-                                                </p>
-                                                
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                                        </div>
+
+            <!-- for medium to large screen (768px - 992px), 2 cards -->
+            <div id="carouselMentorMediumScreenProgramSection" class="carousel carousel-dark slide d-none d-md-block d-lg-none" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper text-center">
+                            <!-- CORE PROGRAM -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/core-program_.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        CORE PROGRAM
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk
+                                            <br>
+                                            S1 dan S2
+                                        </p>
                                     </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 10 peserta*</li>
+                                        <li>12 sampai 23 pertemuan*</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 700.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
+                                </div>
+                            </div>
+                            <!-- SCHOLARSHIP CARE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/scholarship-care.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        SCHOLARSHIP CARE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk semua jenjang 
+                                            <br>
+                                            S1, S2 & S3
+                                        </p>
+                                    </div>
+                                    
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
-
-                <!-- Scholarship Care -->
-                <!-- <div class="col d-flex justify-content-center align-items-center">
-                    <div class="card my-2">
-                        <div class="card-body responsive-text">
-                            <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                            <div class="for">
-                                <p>Untuk <br>S1, S2, S3</p>
-                            </div>
-                            <h4 class="text-center mb-3">Scholarship Care</h4>
-                            <div class="content-price my-3 text-center">
-                                <h6>Mulai dari</h6>
-                                <h5>Rp 100.000</h5>
-                            </div>
-                            <div class="d-flex mx-2">
-                                <a href="#" class="btn custom-btn d-lg-block mx-auto">Lebih Lanjut</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- One Shot Program -->
-                <!-- <div class="col d-flex justify-content-center align-items-center">
-                    <div class="card my-2">
-                        <div class="card-body responsive-text">
-                            <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                            <div class="for">
-                                <p>Untuk <br>S1</p>
-                            </div>
-                            <h4 class="text-center mb-3">One Shot Program</h4>
-                            <div class="content-price my-3 text-center">
-                                <h6>Mulai dari</h6>
-                                <h5>-</h5>
-                            </div>
-                            <div class="d-flex mx-2">
-                                <a href="#" class="btn custom-btn d-lg-block mx-auto disabled">Coming Soon</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Coming Soon -->
-                <!-- <div class="col d-flex justify-content-center align-items-center">
-                    <div class="card my-2">
-                        <div class="card-body responsive-text">
-                            <img src="https://via.placeholder.com/300x200" class="card-img mb-3">
-                            <div class="for">
-                                <p>Untuk <br>S1</p>
-                            </div>
-                            <h4 class="text-center mb-3">Coming Soon</h4>
-                            <div class="content-price my-3 text-center">
-                                <h6>Mulai dari</h6>
-                                <h5>-</h5>
-                            </div>
-                            <div class="d-flex mx-2">
-                                <a href="#" class="btn custom-btn d-lg-block mx-auto disabled">Coming Soon</a>
+                    <!-- slide 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <!-- MINI COURSE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        MINI COURSE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk 
+                                            <br>
+                                            S1 & S2
+                                        </p>
+                                    </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> -->
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorMediumScreenProgramSection" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorMediumScreenProgramSection" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- for small to medium screen (576px - 768px), 1 cards -->
+            <div id="carouselMentorSmallScreenProgramSection" class="carousel carousel-dark slide d-none d-sm-block d-md-none" data-aos="zoom-in">
+                <div class="carousel-inner text-center">
+                    <!-- slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <!-- CORE PROGRAM -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/core-program_.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        CORE PROGRAM
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk
+                                            <br>
+                                            S1 dan S2
+                                        </p>
+                                    </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 10 peserta*</li>
+                                        <li>12 sampai 23 pertemuan*</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 700.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <!-- SCHOLARSHIP CARE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/programs-section/scholarship-care.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        SCHOLARSHIP CARE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk semua jenjang 
+                                            <br>
+                                            S1, S2 & S3
+                                        </p>
+                                    </div>
+                                    
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <!-- MINI COURSE -->
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        MINI COURSE
+                                    </h4>
+                                    <div class="for text-center">
+                                        <p>Untuk persiapan masuk 
+                                            <br>
+                                            S1 & S2
+                                        </p>
+                                    </div>
+                                    <ul class="card-text check-list">
+                                        <li>1 sampai 3 orang per mentor*</li>
+                                        <li>Coaching and Assistance, Proofreading, Exclusive Sharing</li>
+                                    </ul>
+                                    <div class="content-price my-3 text-center">
+                                        <h6>Mulai dari</h6>
+                                        <h5>Rp 90.000-an</h5>
+                                    </div>
+                                    <div class="d-flex mx-2">
+                                        <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                                    </div>
+                                    <p style="font-size: 10px; margin-top: 0.25rem;">*tergantung pilihan program</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorSmallScreenProgramSection" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorSmallScreenProgramSection" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Extra Small Screen (less than 576px) -->
+            <div class="row my-5 responsive-text justify-content-center d-block d-sm-none">
+                <!-- CORE PROGRAM -->
+                <div class="col-12 my-2" data-aos="zoom-in" data-aos-duration="400">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                                CORE PROGRAM
+                            </h4>
+                            <div class="for text-center">
+                                <p>Untuk persiapan masuk
+                                    <br>
+                                    S1 dan S2
+                                </p>
+                            </div>
+                            <div class="content-price my-3 text-center">
+                                <h6>Mulai dari</h6>
+                                <h5>Rp 700.000-an</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SCHOLARSHIP CARE -->
+                <div class="col-12 my-2 mt-3 mb-3" data-aos="zoom-in" data-aos-duration="400">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                                SCHOLARSHIP CARE
+                            </h4>
+                            <div class="for text-center">
+                                <p>Untuk semua jenjang
+                                    <br>
+                                    S1, S2 & S3
+                                </p>
+                            </div>
+                            <div class="content-price my-3 text-center">
+                                <h6>Mulai dari</h6>
+                                <h5>Rp 90.000-an</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MINI COURSE -->
+                <div class="col-12 my-2" data-aos="zoom-in" data-aos-duration="400">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h4 class="card-title text-center">
+                                MINI COURSE
+                            </h4>
+                            <div class="for text-center">
+                                <p>Untuk persiapan masuk
+                                    <br>
+                                    S1 & S2
+                                </p>
+                            </div>
+                            <div class="content-price my-3 text-center">
+                                <h6>Mulai dari</h6>
+                                <h5>Rp 90.000-an</h5>
+                            </div>
+                            <div class="d-flex mx-2">
+                                <a href="#" class="btn custom-btn d-lg-block mx-auto" data-toggle="modal" data-target="#infoCoreProgram">Lebih Lanjut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <!-- Mentor Section -->
     <section class="mentor-section" id="mentor-section">
         <div class="container">
@@ -465,7 +629,7 @@
             </div>
             
             <!-- for big screen (min-width 992px), 3 cards -->
-            <div id="carouselMentorBigScreen" class="carousel carousel-dark slide d-none d-lg-block">
+            <div id="carouselMentorBigScreenMentorSection" class="carousel carousel-dark slide d-none d-lg-block responsive-text" data-bs-ride="carousel" data-bs-interval="4000" data-aos="zoom-in">
                 <div class="carousel-inner">
                     <!-- slide 1 -->
                     <div class="carousel-item active">
@@ -657,19 +821,19 @@
 
                 </div>
         
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorBigScreen" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorBigScreenMentorSection" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
         
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorBigScreen" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorBigScreenMentorSection" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
             <!-- for medium screen (width 768px - 992px ), 2 cards -->
-            <div id="carouselMentorMediumScreen" class="carousel carousel-dark slide d-none d-md-block d-lg-none">
+            <div id="carouselMentorMediumScreenMentorSection" class="carousel carousel-dark slide d-none d-md-block d-lg-none responsive-text" data-bs-ride="carousel" data-bs-interval="4000" data-aos="zoom-in">
                 <div class="carousel-inner">
                     <!-- slide 1 -->
                     <div class="carousel-item active">
@@ -870,12 +1034,255 @@
                     </div>
                 </div>
                 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorMediumScreen" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorMediumScreenMentorSection" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
         
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorMediumScreen" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorMediumScreenMentorSection" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- for extra small - medium screen (width < 768px), 1 cards -->
+            <div id="carouselMentorXSmallScreenMentorSection" class="carousel carousel-dark slide d-block d-md-none responsive-text" data-bs-ride="carousel" data-bs-interval="4000" data-aos="zoom-in">
+                <div class="carousel-inner">
+                    <!-- slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/haniswita.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Haniswita</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Fish-microbe Interaction</li>
+                                        <li>Vliruous Scholarship and PhD University Employee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 2 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/radesma-hermawan.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Radesma S H.</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS Score 7</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Urban Planner, Sociologist</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 3 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rey-abraham.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rey Abraham</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS Score 7.5</li>
+                                        <li>University of Manchester, UK</li>
+                                        <li>Development Studies</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 4 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/rafa.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Rafa Listyani Rahman</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>TOEFL ITP 577</li>
+                                        <li>Maria Curie-Skłodowska University, Poland</li>
+                                        <li>Biologist</li>
+                                        <li>Stefan Banach Scholarship Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 5 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/kholqillah-ardhian-ilman.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Kholqillah Ardhian Ilman</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 7</li>
+                                        <li>Kanazawa University, Japan</li>
+                                        <li>Mechanical Engineering, Material Engineering, Metalurgy</li>
+                                        <li>MEXT Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 6 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/dwi-nining-lestari.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Dwi Nining Lestari</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 6.5</li>
+                                        <li>Jagiellonian University, Poland</li>
+                                        <li>Environmental Specialist</li>
+                                        <li>Bridging Course Programs, Stefan Banach Scholarship Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 7 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/adi-kusmayadi.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Adi Kusmayadi</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>Tunghai University, Taiwan</li>
+                                        <li>Bioenergy, Biorefinery, Circular Economy, Waste Management</li>
+                                        <li>Beasiswa Kampus di Taiwan</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 8 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/praniti-herma.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Praniti Herma Sunaryo</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 8</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Forest and Nature Conservationist</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 9 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/syarifatul-umam.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Syarifatul Umam</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 7.5</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>UX/CX Research, Entrepreneurship, Mental Fitness</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 10 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/ayunda-putri.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Ayunda Dewi Jayanti Jilan Putri</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 6.5</li>
+                                        <li>Vrije Universiteit Amsterdam, Netherlands</li>
+                                        <li>Medical, International Public Health, Policy</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 11 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/nurfitriani-marsuki.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Nurfitriani Marsuki</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 7</li>
+                                        <li>Utrecht University, Netherlands</li>
+                                        <li>Applied Cognitive Psychology</li>
+                                        <li>LPDP Awardee</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- slide 12 -->
+                    <div class="carousel-item">
+                        <div class="cards-wrapper">
+                            <div class="card">
+                                <div class="image-wrapper">
+                                    <img src="assets/mentor-section/naura.svg">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Naurah Nadzifah</h5>
+                                    <ul class="card-text check-list overflow-auto" style="max-height: 80%;">
+                                        <li>IELTS 6.5</li>
+                                        <li>Wageningen University and Research, Netherlands</li>
+                                        <li>Marketing and Consumer Behaviour Specialist / Sustainable Business Specialist</li>
+                                        <li>BPI-BIM, Bridging Course, Beasiswa PPA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMentorXSmallScreenMentorSection" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+        
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMentorXSmallScreenMentorSection" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>

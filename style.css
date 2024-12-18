@@ -211,42 +211,54 @@ html {
 }
 
 /* Program Section */
+.program-section {
+    padding: 3rem;
+}
+
+.program-section .carousel-inner {
+    padding: 0.5rem;
+}
+
+.program-section .cards-wrapper {
+    display: flex;
+    margin: 6rem 6rem;
+    justify-content: center;
+}
+
 .program-section .card {
-    width: 300px;
+    margin: 0 0.5rem;
+    width: calc(100%/3);
+    border: none;
+    border-radius: 0.25rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
-.program-section .card-body {
-    width: auto;
-    max-height: 450px;
+.program-section .image-wrapper {
+    height: 15vw;
+    margin: 0 auto;
 }
 
-.program-section .card-body img { 
-    width: 175px;
-    height: 150px;
-    margin-bottom: 1rem;
-} 
-
-.program-section .card-body p {
-    margin: 0;
+.program-section .image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    padding: 0.5rem;
 }
 
-.program-section .carousel-indicators {
-    margin: 0;
-    opacity: 0.3;
+.program-section .carousel-control-prev, 
+.program-section .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.program-section .carousel-indicators button {
-    background-color: gray;
-}
-
-.program-section .carousel-indicators .active {
-    background-color: black;
-}
-
-.program-section .carousel-control-prev img,
-.program-section .carousel-control-next img {
-    width: 2rem;
+.program-section .carousel-control-next span,
+.program-section .carousel-control-prev span {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 /* Mentor Section */
@@ -267,6 +279,7 @@ html {
 .mentor-section .card {
     margin: 0 0.5rem;
     width: calc(100%/3);
+    height: 35vw;
     border: none;
     border-radius: 0.25rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -274,7 +287,7 @@ html {
 
 .mentor-section .image-wrapper {
     height: 15vw;
-    margin: 0 auto;
+    margin: 1rem auto 0 auto;
 }
 
 .mentor-section .image-wrapper img {
@@ -383,7 +396,8 @@ html {
         font-size: 16px;
     }
 
-    .responsive-text p {
+    .responsive-text p, 
+    .responsive-text li {
         font-size: 14px;
     }
 
@@ -410,7 +424,6 @@ html {
         margin-right: 0;
     }
 
-    /* Hero Section */
     .hero .hero-image {
         margin-bottom: 2rem;
         /* max-width: 80%; */
@@ -431,22 +444,52 @@ html {
 
     /* Program Section */
     .program-section .card {
-        width: 200px;
+        margin: 0;
+        width: 100%;
+        box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.10);
+        border-radius: 0.5rem;
     }
 
-    .program-section .card-body img {
-        width: 125px;
-        height: 100px;
+    .program-section .card-body {
+        padding: 1rem;
     }
-
-    .program-section .carousel-control-prev img,
-    .program-section .carousel-control-next img {
-        width: 1rem;
-    }
-
+    
     /* Mentor Section */
-    .mentor-section .carousel-item .mentor-desc {
-        margin-top: 1rem;
+    .mentor-section .carousel-inner {
+        padding: 0;
+    }
+
+    .mentor-section .cards-wrapper {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .mentor-section .card {
+        margin: 0.25rem 0.25rem;
+        width: 100%;
+        height: 95vw;
+    }
+
+    .mentor-section .image-wrapper {
+        height: 30vw;
+    }
+
+    .mentor-section .image-wrapper img {
+        border-radius: 50%;
+        padding: 0;
+    }
+    
+    .mentor-section .carousel-control-prev, 
+    .mentor-section .carousel-control-next {
+        display: none;
+        width: 2vh;
+        height: 2vh;
+    }
+
+    .mentor-section .carousel-control-next span,
+    .mentor-section .carousel-control-prev span {
+        width: 1rem;
+        height: 1rem;
     }
 
     /* Why Us Section */
@@ -572,27 +615,34 @@ html {
     }
 
     /* Program Section */
-    .program-section .card-body {
-        height: 400px;
-    }
-
-    .program-section .card-body img {
-        width: 150px;
-        height: 100px;
+    .program-section .cards-wrapper {
+        margin: 1rem 1rem;
     }
 
     .program-section .card {
-        width: 225px;
+        margin: 0 4rem;
+        width: 100%;
+        height: 75vw;
     }
-
-    .program-section .carousel-control-prev img,
-    .program-section .carousel-control-next img {
-        width: 1.5rem;
+    
+    .program-section .image-wrapper {
+        height: 20vw;
     }
 
     /* Mentor Section */
-    .mentor-section .carousel-item .mentor-desc {
-        margin-top: 1rem;
+    .mentor-section .cards-wrapper {
+        margin: 3rem 3rem;
+        justify-content: center;
+    }
+
+    .mentor-section .card {
+        margin: 0 0.25rem;
+        width: 80%;
+        height: 70vw;
+    }
+    
+    .mentor-section .image-wrapper {
+        height: 25vw;
     }
 
     /* Guide Section */
@@ -713,6 +763,20 @@ html {
         height: 125px;
     }
 
+    /* Program Section */
+    .program-section .cards-wrapper {
+        margin: 3rem 3rem;
+    }
+
+    .program-section .card {
+        margin: 0 0.5rem;
+        width: calc(100%/2);
+    }
+    
+    .program-section .image-wrapper {
+        height: 20vw;
+    }
+
     /* Mentor Section */
     .mentor-section .cards-wrapper {
         margin: 3rem 3rem;
@@ -721,6 +785,7 @@ html {
     .mentor-section .card {
         margin: 0 0.25rem;
         width: calc(100%/2);
+        height: 55vw;
     }
     
     .mentor-section .image-wrapper {
@@ -748,14 +813,15 @@ html {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    .program-section .card {
-        width: 300px;
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /* Mentor Section */
+    .mentor-section .card {
+        height: 45vw;
     }
 }
 
-@media (min-width: 1400px) {
-    .program-section .card {
-        width: 350px;
-    }
-}
+/* @media (min-width: 1200px) and (max-width: 1399.98px) {
+} */
+
+/* @media (min-width: 1400px) {
+} */

@@ -334,8 +334,19 @@ html {
     height: 1.5rem;
 }
 
+/* FAQ */
+.faq-section {
+    padding: 3rem;
+    background-color: var(--bg4);
+}
+
+.faq-section .accordion-item {
+    width: 50vw;
+}
+
 /* Guide Section */
 .guide-section {
+    padding: 3rem;
     display: block;
 }
 
@@ -523,6 +534,15 @@ html {
         height: 125px;
     }
 
+    /* FAQ */
+    .faq-section .accordion-item {
+        width: 90vw;
+    }
+
+    .faq-section .accordion-item button {
+        font-size: 14px
+    }
+
     /* Guide Section */
     .guide-section .content {
         max-width: 80vw;
@@ -632,6 +652,15 @@ html {
     
     .mentor-section .image-wrapper {
         height: 25vw;
+    }
+
+    /* FAQ */
+    .faq-section .accordion-item {
+        width: 80vw;
+    }
+
+    .faq-section .accordion-item button {
+        font-size: 14px
     }
 
     /* Guide Section */
@@ -745,6 +774,15 @@ html {
         height: 20vw;
     }
 
+    /* FAQ */
+    .faq-section .accordion-item {
+        width: 70vw;
+    }
+
+    .faq-section .accordion-item button {
+        font-size: 14px
+    }
+
     /* Guide Section */
     .guide-section .content {
         max-width: 60vw;
@@ -756,6 +794,11 @@ html {
     .mentor-section .card {
         height: 45vw;
     }
+
+    /* FAQ */
+    .faq-section .accordion-item {
+        width: 60vw;
+    }   
 }
 
 /* @media (min-width: 1200px) and (max-width: 1399.98px) {

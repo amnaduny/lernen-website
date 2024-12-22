@@ -514,11 +514,11 @@ html {
     .mentor-section .card {
         margin: 0.25rem 0.25rem;
         width: 100%;
-        height: 95vw;
+        height: 125vw;
     }
 
     .mentor-section .image-wrapper {
-        height: 30vw;
+        height: 50vw;
     }
 
     .mentor-section .image-wrapper img {

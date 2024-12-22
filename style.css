@@ -175,11 +175,22 @@ html {
 
 /* Hero Section */
 .hero {
-    background-color: var(--bg4);
+    /* background-color: var(--bg4); */
+    background: url('assets/hero-object.webp') center center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .hero .hero-row {
     margin: 5rem;
+}
+
+.hero .hero-content {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 5%;
+    padding: 1rem;
 }
 
 .hero .hero-image {

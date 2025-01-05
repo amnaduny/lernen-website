@@ -200,7 +200,7 @@ html {
 
 /* Information Section */
 .information {
-    background: url('assets/background-sections.svg') no-repeat center center, 
+    background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-size: cover;
     background-blend-mode: overlay;
@@ -213,7 +213,7 @@ html {
 
 /* Why Us Section */
 .why-us {
-    background: url('assets/background-sections.svg') no-repeat center center, 
+    background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-size: cover;
     background-blend-mode: overlay;
@@ -290,9 +290,94 @@ html {
     height: 1.5rem;
 }
 
+.course-program {
+    background: url('assets/background-sections.svg') no-repeat fixed center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: contain;
+    background-blend-mode: overlay;
+    padding: 1rem;
+}
+
+.course-program .button-nav {
+    width: 105px;
+    border-color: transparent;
+}
+
+.course-program .card {
+    width: 200px;
+    height: 225px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.course-program .card.scholarship-care {
+    width: 200px;
+    height: 300px;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.course-program .card-body {
+    padding: 1rem;
+}
+
+.course-program .button-price {
+    padding: 1rem;
+}
+
+.course-program img {
+    margin-top: 0.5rem;
+    width: 100px;
+    height: 100px;
+}
+
+.course-program .roadmap.card {
+    width: 1000px;
+    height: auto;
+    background-color: var(--bg4);
+    border: none;
+
+    transition: transform 0.3s ease;
+}
+
+.course-program .roadmap.card:hover {
+    transform: scale(1.02);
+}
+
+.course-program .roadmap.card .wrapper {
+    display: block;
+    border-radius: 0.5rem;
+    width: auto;
+}
+
+.course-program .facility {
+    background-color: var(--bg4);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    max-width: 95%;
+    border-radius: 1rem;
+
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.course-program .facility:hover {
+    transform: scale(1.025);
+}
+
+.course-program .facility h5,
+.course-program .facility p {
+    margin: 0;
+}
+
+.course-program .facility img {
+    width: 70px;
+    height: 70px;
+}
+
 /* Mentor Section */
 .mentor-section {
-    background: url('assets/background-sections.svg') no-repeat center center, 
+    background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-size: cover;
     background-blend-mode: overlay;
@@ -326,7 +411,8 @@ html {
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 0.25rem;
+    border: solid 1px black;
 }
 
 .mentor-section .carousel-control-prev, 
@@ -359,11 +445,15 @@ html {
 .guide-section {
     padding: 3rem;
     display: block;
+    background: url('assets/background-sections.svg') no-repeat fixed center, 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-blend-mode: overlay;
 }
 
 .guide-section .content img {
-    max-width: 20%;
-    height: auto;
+    width: 70px;
+    height: 70px;
     margin-right: 1rem;
 }
 
@@ -500,6 +590,25 @@ html {
     .program-section .card-body {
         padding: 1rem;
     }
+
+    .course-program .card {
+        width: 200px;
+        height: 225px;
+    }
+    
+    .course-program img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .course-program .facility img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .course-program .facility p {
+        display: none;
+    }
     
     /* Mentor Section */
     .mentor-section .carousel-inner {
@@ -523,7 +632,8 @@ html {
 
     .mentor-section .image-wrapper img {
         border-radius: 50%;
-        padding: 0;
+        padding: 0.25rem;
+        border: solid 1px black;
     }
     
     .mentor-section .carousel-control-prev, 
@@ -647,6 +757,15 @@ html {
     
     .program-section .image-wrapper {
         height: 20vw;
+    }
+
+    .course-program .set-col {
+        padding: 3rem;
+    }
+
+    .course-program img {
+        width: 90px;
+        height: 90px;
     }
 
     /* Mentor Section */

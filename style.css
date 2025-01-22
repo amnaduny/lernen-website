@@ -8,34 +8,34 @@
     --text: #1c1c1c;
     --background: #f9f9f9;
 
-    /* Font Style */
+    
     --font-style--poppins: 'Poppins';
     --font-style--plus-jakarta: 'Plus Jakarta Sans';
-    /* Desktop Sizes */
+    
     --font-size-h1-desktop: 56px;
     --font-size-h2-desktop: 40px;
     --font-size-h3-desktop: 28px;
     --font-size-p-desktop: 18px;
 
-    /* Tablet Sizes */
+    
     --font-size-h1-tablet: 48px;
     --font-size-h2-tablet: 36px;
     --font-size-h3-tablet: 24px;
     --font-size-p-tablet: 16px;
 
-    /* Mobile Sizes */
+    
     --font-size-h1-mobile: 36px;
     --font-size-h2-mobile: 28px;
     --font-size-h3-mobile: 20px;
     --font-size-p-mobile: 14px;
 
-    /* Small Mobile Sizes */
+    
     --font-size-h1-small-mobile: 30px;
     --font-size-h2-small-mobile: 24px;
     --font-size-h3-small-mobile: 16px;
     --font-size-p-small-mobile: 12px;
 
-    /* Font Weights */
+    
     --bold: 700;
     --semi-bold: 600;
     --medium: 500;
@@ -66,10 +66,6 @@ html {
     margin-left: 15rem;
     margin-right: 15rem;
 }
-
-/* .responsive-text {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-} */
 
 .responsive-text h1,
 .responsive-text h2,
@@ -102,10 +98,10 @@ html {
 }
 
 .no-scrollbar::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
+    display: none; 
 }
   
-/* Navbar */
+
 .navbar {
     position: sticky;
     top: 0;
@@ -180,9 +176,9 @@ html {
     background-color: var(--bg-button);
 }
 
-/* Hero Section */
+
 .hero {
-    /* background-color: var(--bg4); */
+    
     background: url('assets/hero-object.webp') center center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
     background-size: cover;
@@ -209,7 +205,7 @@ html {
     height: auto;
 }
 
-/* Information Section */
+
 .information {
     background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
@@ -222,7 +218,7 @@ html {
     height: auto;
 }
 
-/* Why Us Section */
+
 .why-us {
     background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
@@ -246,7 +242,7 @@ html {
     padding: 1rem;
 }
 
-/* Program Section */
+
 .program-section {
     background-color: var(--bg4);
     padding: 3rem;
@@ -258,7 +254,7 @@ html {
 
 .program-section .cards-wrapper {
     display: flex;
-    /* margin: 6rem 6rem; */
+    
     justify-content: center;
 }
 
@@ -278,8 +274,8 @@ html {
 .program-section .image-wrapper img {
     width: 100%;
     height: 100%;
-    /* max-width: 100%; */
-    /* max-height: 100%; */
+    
+    
     border-radius: 50%;
     padding: 0.5rem;
     margin-top: 0.5rem;
@@ -385,7 +381,7 @@ html {
     height: 70px;
 }
 
-/* Mentor Section */
+
 .mentor-section {
     background: url('assets/background-sections.svg') no-repeat fixed center, 
     linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
@@ -441,7 +437,7 @@ html {
     height: 1.5rem;
 }
 
-/* FAQ */
+
 .faq-section {
     padding: 3rem;
     background-color: var(--bg4);
@@ -451,7 +447,7 @@ html {
     width: 50vw;
 }
 
-/* Guide Section */
+
 .guide-section {
     padding: 3rem;
     display: block;
@@ -492,7 +488,6 @@ html {
     transform: rotate(180deg);
 }
 
-/* Newsletter Section */
 .newsletter.container .row.custom-bg {
     background-color: var(--bg4);
     border-radius: 1rem;
@@ -505,7 +500,6 @@ html {
     width: 185px;
 }
 
-/* Footer */
 .footer {
     padding: 2rem;
     background-color: var(--bg4);
@@ -554,7 +548,7 @@ html {
         font-size: 14px;
     }
 
-    /* Navbar */
+    
     .navbar-signup {
         display: none !important;
     }
@@ -563,7 +557,7 @@ html {
         margin: 0;
     }
     
-    /* Hero Section */
+    
     .hero .hero-row {
         margin-left: 0;
         margin-right: 0;
@@ -571,7 +565,7 @@ html {
 
     .hero .hero-image {
         margin-bottom: 2rem;
-        /* max-width: 80%; */
+        
     }
 
     .hero .hero-content {
@@ -582,12 +576,12 @@ html {
         justify-content: center;
     }
 
-    /* Information Section */
+    
     .information .img-content {
         max-width: 70%;
     }
 
-    /* Program Section */
+    
     .program-section .card {
         margin: 0;
         width: 100%;
@@ -628,7 +622,7 @@ html {
         display: none;
     }
     
-    /* Mentor Section */
+    
     .mentor-section .carousel-inner {
         padding: 0;
     }
@@ -667,13 +661,13 @@ html {
         height: 1rem;
     }
 
-    /* Why Us Section */
+    
     .why-us-content img {
         width: 175px;
         height: 125px;
     }
 
-    /* FAQ */
+    
     .faq-section .accordion-item {
         width: 90vw;
     }
@@ -682,9 +676,9 @@ html {
         font-size: 14px
     }
 
-    /* Guide Section */
+    
 
-    /* Newsletter Section */
+    
     .newsletter {
         text-align: center;
     }
@@ -735,7 +729,7 @@ html {
         display: none !important;
     }
 
-    /* Hero Section */
+    
     .hero .hero-image {
         margin-bottom: 2rem;
     }
@@ -748,18 +742,18 @@ html {
         justify-content: center;
     }
 
-    /* Information Section */
+    
     .information .img-content {
         max-width: 70%;
     }
 
-    /* Why Us Section */
+    
     .why-us-content img {
         width: 175px;
         height: 125px;
     }
 
-    /* Program Section */
+    
     .program-section .cards-wrapper {
         margin: 1rem 1rem;
     }
@@ -782,7 +776,7 @@ html {
         height: 90px;
     }
 
-    /* Mentor Section */
+    
     .mentor-section .cards-wrapper {
         margin: 3rem 3rem;
         justify-content: center;
@@ -798,7 +792,7 @@ html {
         height: 25vw;
     }
 
-    /* FAQ */
+    
     .faq-section .accordion-item {
         width: 80vw;
     }
@@ -807,10 +801,10 @@ html {
         font-size: 14px
     }
 
-    /* Guide Section */
+    
 
 
-    /* Newsletter Section */
+    
     .newsletter {
         text-align: center;
     }
@@ -862,10 +856,10 @@ html {
         display: none !important;
     }
 
-    /* Hero Section */
+    
     .hero .hero-image {
         margin-bottom: 2rem;
-        /* max-width: 80%; */
+        
     }
 
     .hero .hero-content {
@@ -876,18 +870,18 @@ html {
         justify-content: center;
     }
 
-    /* Information Section */
+    
     .information .img-content {
         max-width: 50%;
     }
 
-    /* Why Us Section */
+    
     .why-us-content img {
         width: 175px;
         height: 125px;
     }
 
-    /* Program Section */
+    
     .program-section .cards-wrapper {
         margin: 3rem 3rem;
     }
@@ -901,7 +895,7 @@ html {
         height: 20vw;
     }
 
-    /* Mentor Section */
+    
     .mentor-section .cards-wrapper {
         margin: 3rem 3rem;
     }
@@ -916,7 +910,7 @@ html {
         height: 20vw;
     }
 
-    /* FAQ */
+    
     .faq-section .accordion-item {
         width: 70vw;
     }
@@ -925,23 +919,17 @@ html {
         font-size: 14px
     }
 
-    /* Guide Section */
+    
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Mentor Section */
+    
     .mentor-section .card {
         height: 45vw;
     }
 
-    /* FAQ */
+    
     .faq-section .accordion-item {
         width: 60vw;
     }   
 }
-
-/* @media (min-width: 1200px) and (max-width: 1399.98px) {
-} */
-
-/* @media (min-width: 1400px) {
-} */

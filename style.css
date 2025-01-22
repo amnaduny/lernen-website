@@ -100,7 +100,14 @@ html {
 .no-scrollbar::-webkit-scrollbar {
     display: none; 
 }
-  
+
+.separator {
+    border-top: 1px solid #837a7a; 
+    width: 75%; 
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .navbar {
     position: sticky;
@@ -402,7 +409,7 @@ html {
 .mentor-section .card {
     margin: 0 0.5rem;
     width: calc(100%/3);
-    height: 35vw;
+    height: 525px;
     border: none;
     border-radius: 0.25rem;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
@@ -785,7 +792,7 @@ html {
     .mentor-section .card {
         margin: 0 0.25rem;
         width: 80%;
-        height: 70vw;
+        height: 425px;
     }
     
     .mentor-section .image-wrapper {
@@ -903,7 +910,7 @@ html {
     .mentor-section .card {
         margin: 0 0.25rem;
         width: calc(100%/2);
-        height: 55vw;
+        height: 450px;
     }
     
     .mentor-section .image-wrapper {
@@ -923,11 +930,6 @@ html {
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    
-    .mentor-section .card {
-        height: 45vw;
-    }
-
     
     .faq-section .accordion-item {
         width: 60vw;

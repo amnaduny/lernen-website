@@ -173,6 +173,13 @@ html {
     font-size: 1rem;
 }
 
+.block-word {
+    display: inline-block;
+    border-radius: 0.25rem;
+    padding: 0.4rem;
+    background-color: var(--bg-button);
+}
+
 /* Hero Section */
 .hero {
     /* background-color: var(--bg4); */
@@ -191,6 +198,10 @@ html {
     backdrop-filter: blur(2px);
     border-radius: 5%;
     padding: 1rem;
+}
+
+.hero .hero-content p {
+    font-weight: var(--semi-bold);
 }
 
 .hero .hero-image {
@@ -458,8 +469,6 @@ html {
 
 .guide-section .content {
     background-color: white;
-    max-width: 50vw;
-    
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     padding-right: 1rem;
@@ -674,9 +683,6 @@ html {
     }
 
     /* Guide Section */
-    .guide-section .content {
-        max-width: 80vw;
-    }
 
     /* Newsletter Section */
     .newsletter {
@@ -802,9 +808,7 @@ html {
     }
 
     /* Guide Section */
-    .guide-section .content {
-        max-width: 70vw;
-    }
+
 
     /* Newsletter Section */
     .newsletter {
@@ -922,9 +926,6 @@ html {
     }
 
     /* Guide Section */
-    .guide-section .content {
-        max-width: 60vw;
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
